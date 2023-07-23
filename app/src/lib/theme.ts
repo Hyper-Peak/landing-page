@@ -1,11 +1,14 @@
 import { onMount } from 'svelte';
-import { derived, writable } from 'svelte/store';
+import { writable } from 'svelte/store';
+
+const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
 
 export const WHITE: string = '#f8f8ff'
 export const BLACK: string = '#1c1c1c'
 export const GRAY: string = '#c0c0c0'
 
 export type DS = {
+  theme: Theme,
   isLight: boolean
   colors: Colors
 }
@@ -14,6 +17,10 @@ export type Colors = {
   bg: string
   content: string
   gray: string
+}
+
+export enum Theme {
+  Light, Dark
 }
 
 const lightColors = {
@@ -30,19 +37,26 @@ const darkColors = {
 
 export const ds = writable<DS>({
   isLight: true,
+  theme: Theme.Light,
   colors: lightColors,
 })
 
-onMount(() => {
-  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    ds.update((state) => ({
-      isLight: state.isLight,
-      colors: state.isLight ? lightColors : darkColors,
-    }))
-  })
-})
+export function setTheme(theme: Theme) {
+  ds.set(
+    {
+      isLight: theme == Theme.Light,
+      theme: theme,
+      colors: theme == Theme.Light ? lightColors : darkColors,
+    }
+  )
+}
 
-export const dsStyles = derived(ds, $ds => Object.entries($ds.colors)
-  .map(([key, value]) => `--${key}:${value}`)
-  .join(';')
-)
+export function colorsToCSS(colors: Colors): string {
+  return Object.entries(colors)
+    .map(([key, value]) => `--${key}:${value}`)
+    .join(';')
+}
+
+export function prefersDarkTheme(): boolean {
+  return window.matchMedia(DARK_PREFERENCE).matches
+}
