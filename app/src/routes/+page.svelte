@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+
+</script>
+
+<style>
+
+</style>
+
+<svelte:head>
+  <title>HyperPeak: Software solutions</title>
+</svelte:head>
+
+<h1>HyperPeak</h1>
+
+<p>Peak software performance.</p>
+<p>Delivered hyper fast.</p>
+
+<button>Services</button>
