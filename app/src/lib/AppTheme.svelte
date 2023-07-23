@@ -20,6 +20,11 @@
 </div>
 
 <style>
+	:global(body) {
+		background-color: var(--bg);
+        overscroll-behavior: none;
+	}
+
 	#root {
 		width: 100vw;
 		height: 100vh;
