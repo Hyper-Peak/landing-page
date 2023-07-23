@@ -54,8 +54,6 @@ export function colorsToCSS(colors: Colors): string {
     .join(';')
 }
 
-const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
-
 export function prefersDarkTheme(): boolean {
-  return window.matchMedia(DARK_PREFERENCE).matches
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
 }
