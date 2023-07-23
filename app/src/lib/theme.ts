@@ -1,7 +1,4 @@
-import { onMount } from 'svelte';
 import { writable } from 'svelte/store';
-
-const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
 
 export const WHITE: string = '#f8f8ff'
 export const BLACK: string = '#1c1c1c'
@@ -56,6 +53,8 @@ export function colorsToCSS(colors: Colors): string {
     .map(([key, value]) => `--${key}:${value}`)
     .join(';')
 }
+
+const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
 
 export function prefersDarkTheme(): boolean {
   return window.matchMedia(DARK_PREFERENCE).matches
