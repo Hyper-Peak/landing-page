@@ -1,21 +1,3 @@
 :root {
-    /* light theme */
-    --pure: #F8F8FF;
-    --pureInv: #1C1C1C;
     --gray: #C0C0C0;
-}
-
-[data-theme='dark'] {
-    /* dark theme */
-    --pure: #1C1C1C;
-    --pureInv: #F8F8FF;
-    --gray: #C0C0C0;
-}
-
-body {
-    background-color: var(--pure);
-}
-
-h1, h2, h3, p {
-    color: var(--pureInv);
 }
