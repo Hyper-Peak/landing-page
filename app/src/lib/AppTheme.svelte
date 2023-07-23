@@ -26,6 +26,7 @@
 		padding: 32px;
 		background-color: var(--bg);
 		box-sizing: border-box;
+		transition: background-color 0.3s ease;
 	}
 
 	#appbar {
@@ -42,6 +43,7 @@
 
 	:global(h1, h2, h3, h4, p) {
 		color: var(--content);
+		transition: color 0.3s ease;
 	}
 
 	.fullscreen {
