@@ -10,7 +10,7 @@
 <p>Peak software performance.</p>
 <p>Delivered hyper fast.</p>
 
-<button>Services</button>
+<a class="btn" href="/services">Services</a>
 
 <style>
 </style>
