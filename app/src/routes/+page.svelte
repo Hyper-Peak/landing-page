@@ -3,10 +3,10 @@
 
 <h1>HyperPeak</h1>
 
-<p>Peak software performance.</p>
-<p>Delivered hyper fast.</p>
+<p>A software service company.</p>
+<p>We build mobile, web and desktop apps</p>
 
-<a class="btn" href="/services">Services</a>
+<a href="/services">Services</a>
 
 <style>
 </style>

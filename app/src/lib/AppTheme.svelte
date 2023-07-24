@@ -1,19 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { colorsToCSS, ds } from '$lib/theme';
-	import HomeButton from './HomeButton.svelte';
-	import ThemeToggle from './ThemeToggle.svelte';
+	import NavBar from './NavBar.svelte';
 </script>
 
 <div id="root" class="fullscreen" style={colorsToCSS($ds.colors)}>
-	<div id="appbar">
-		{#if $page.url.pathname !== '/'}
-			<HomeButton />
-		{/if}
-		<div style="margin-left: auto;">
-			<ThemeToggle />
-		</div>
-	</div>
+	<NavBar/>
 	<div id="content">
 		<slot />
 	</div>
@@ -32,11 +23,6 @@
 		background-color: var(--bg);
 		box-sizing: border-box;
 		transition: background-color 0.3s ease;
-	}
-
-	#appbar {
-		display: flex;
-		flex-direction: row;
 	}
 
 	#content {
