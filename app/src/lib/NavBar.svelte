@@ -10,7 +10,7 @@
 	{#if currentPage !== '/'}
 		<HomeButton />
 	{/if}
-	{#if currentPage !== '/services' && currentPage !== '/'}
+	{#if currentPage !== '/services'}
 		<a href="/services">Services</a>
 	{/if}
 	{#if currentPage !== '/portfolio'}
