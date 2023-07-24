@@ -16,9 +16,6 @@
 	{#if currentPage !== '/portfolio'}
 		<a href="/portfolio">Portfolio</a>
 	{/if}
-	{#if currentPage !== '/workflow'}
-		<a href="/workflow">Workflow</a>
-	{/if}
 	{#if currentPage !== '/pricing'}
 		<a href="/pricing">Pricing</a>
 	{/if}
