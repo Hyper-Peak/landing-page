@@ -1,12 +1,17 @@
 <script>
+	import Spacer from '$lib/components/Spacer.svelte';
 </script>
 
-<h1 class="xl"><i>HyperPeak</i></h1>
+<Spacer weight="2" />
 
-<p class="m">A software service company.</p>
-<p class="m">We build mobile, web and desktop apps.</p>
+<h1 class="xxl"><i>HyperPeak</i></h1>
+
+<p class="l">A software service company.</p>
+<p class="l">We build mobile, web and desktop apps.</p>
 
 <a href="/services">Services</a>
+
+<Spacer weight="8" />
 
 <style>
 </style>

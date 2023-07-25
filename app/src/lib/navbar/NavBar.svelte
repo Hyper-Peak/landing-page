@@ -1,9 +1,7 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import Spacer from '$lib/components/Spacer.svelte';
 	import NavLink from './NavLink.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
-
-	$: currentPage = $page.url.pathname;
 </script>
 
 <div id="appbar">
@@ -12,7 +10,7 @@
 	<NavLink href="/portfolio" />
 	<NavLink href="/pricing" />
 
-	<div class="spacer-w" />
+	<Spacer />
 
 	<NavLink href="/contact" />
 	<NavLink href="/blog" />

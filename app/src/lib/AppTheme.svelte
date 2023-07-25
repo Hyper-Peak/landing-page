@@ -69,6 +69,11 @@
 		padding: 0;
 	}
 
+
+	:global(.xxl) {
+		font-size: 64px;
+	}
+
 	:global(.xxl) {
 		font-size: 48px;
 	}
