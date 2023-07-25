@@ -12,10 +12,8 @@ export type Colors = {
     onBg: string
     gray: string
     primary: string
-    primaryInv: string
     onPrimary: string
     secondary: string
-    secondaryInv: string
     onSecondary: string
 }
 
@@ -25,10 +23,8 @@ export const lightColors: Colors = {
     onBg: BLACK,
     gray: GRAY,
     primary: PRIMARY_LIGHT,
-    primaryInv: PRIMARY_DARK,
     onPrimary: WHITE,
     secondary: SECONDARY_LIGHT,
-    secondaryInv: SECONDARY_DARK,
     onSecondary: WHITE,
 }
 
@@ -37,9 +33,7 @@ export const darkColors: Colors = {
     onBg: WHITE,
     gray: GRAY,
     primary: PRIMARY_DARK,
-    primaryInv: PRIMARY_LIGHT,
-    onPrimary: BLACK,
+    onPrimary: WHITE,
     secondary: SECONDARY_DARK,
-    secondaryInv: SECONDARY_LIGHT,
-    onSecondary: BLACK,
+    onSecondary: WHITE,
 }

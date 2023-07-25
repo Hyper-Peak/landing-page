@@ -9,17 +9,18 @@
 <style>
 	.btn-primary {
 		display: inline-block; /* Make the link behave like a block element */
-		background-color: var(--primary) !important;
-		color: var(--onPrimary) !important;
+		background-color: var(--primary);
+		color: var(--onPrimary);
 		text-decoration: none; /* Remove underline */
 		font-size: var(--m);
-		padding: 16px 48px !important;
+		padding: 16px 48px;
 		border-radius: 32px; /* Adjust the border radius to your liking */
-		transition: background-color 0.3s ease;
+		transition: color background-color 0.3s ease;
 
 		/* Change the color on hover */
 		&:hover {
-			color: var(--primaryInv) !important;
+			background-color: var(--secondary) !important;
+			color: var(--onSecondary) !important;
 		}
 	}
 </style>
