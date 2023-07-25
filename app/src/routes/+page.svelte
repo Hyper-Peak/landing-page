@@ -4,9 +4,9 @@
 
 <Spacer weight={2} />
 
-<h1 class="xxl"><i>HyperPeak</i></h1>
+<h1 class="xxl"><b><i>HyperPeak</i></b></h1>
 
-<p class="l mt32">A software service company.</p>
+<p class="l mt24">A software service company.</p>
 <p class="l mt12">We build mobile, web and desktop apps.</p>
 
 <a href="/services" class="btn-primary mt32">Services</a>

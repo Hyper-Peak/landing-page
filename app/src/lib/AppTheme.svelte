@@ -48,6 +48,7 @@
 		color: var(--onBg);
 		transition: color 0.3s ease;
 		margin: 0px;
+		padding: 0px;
 	}
 
 	:global(h1, h2) {
@@ -103,18 +104,17 @@
 
 	:global(.btn-primary) {
 		display: inline-block; /* Make the link behave like a block element */
-		background-color: var(--primary);
-		color: var(--onPrimary);
+		background-color: var(--primary) !important;
+		color: var(--onPrimary) !important;
 		text-decoration: none; /* Remove underline */
 		font-size: var(--m);
-		padding: 12px 16px;
-		border-radius: 12px; /* Adjust the border radius to your liking */
+		padding: 16px 48px !important;
+		border-radius: 32px; /* Adjust the border radius to your liking */
 		transition: background-color 0.3s ease;
 
 		/* Change the color on hover */
 		&:hover {
-			background-color: var(--primary-inv);
-			color: var(--onPrimary); /* Keeps the text color constant on hover */
+			color: var(--primaryInv) !important;
 		}
 	}
 
@@ -140,6 +140,10 @@
 
 	:global(.mt24) {
 		margin-top: 24px !important;
+	}
+
+	:global(.mt28) {
+		margin-top: 28px !important;
 	}
 
 	:global(.mt32) {
