@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { colorsToCSS, ds } from '$lib/theme';
-	import NavBar from './NavBar.svelte';
+	import NavBar from './navbar/NavBar.svelte';
 </script>
 
 <div id="root" class="fullscreen" style={colorsToCSS($ds.colors)}>
