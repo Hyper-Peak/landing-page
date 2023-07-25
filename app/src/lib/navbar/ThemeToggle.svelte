@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Theme, ds, prefersDarkTheme, setTheme } from '$lib/theme';
+	import { Theme, ds, prefersDarkTheme, setTheme } from '$lib/design-system';
 	import { onMount } from 'svelte';
 
 	function toggleTheme() {

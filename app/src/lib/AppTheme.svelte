@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ds, dsToCssVars } from '$lib/theme';
+	import { ds, dsToCssVars } from '$lib/design-system';
 	import NavBar from './navbar/NavBar.svelte';
 </script>
 
