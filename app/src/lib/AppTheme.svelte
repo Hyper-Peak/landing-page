@@ -3,8 +3,17 @@
 	import NavBar from './navbar/NavBar.svelte';
 </script>
 
+<svelte:head>
+	<link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Nunito+Sans:700|Roboto:400,400i,700&display=swap"
+	/>
+</svelte:head>
+
 <div id="root" class="fullscreen" style={colorsToCSS($ds.colors)}>
-	<NavBar />
+	<div id="navbar">
+		<NavBar />
+	</div>
 	<div id="content">
 		<slot />
 	</div>
@@ -19,7 +28,10 @@
 	#root {
 		width: 100vw;
 		height: 100vh;
-		padding: 32px;
+		padding-top: 24px;
+		padding-left: 32px;
+		padding-right: 32px;
+		padding-bottom: 32px;
 		background-color: var(--bg);
 		box-sizing: border-box;
 		transition: background-color 0.3s ease;
@@ -35,6 +47,16 @@
 	:global(h1, h2, h3, h4, p, a:link, a:visited) {
 		color: var(--content);
 		transition: color 0.3s ease;
+		margin: 0px;
+	}
+
+	:global(h1, h2) {
+		font-family: 'Nunito Sans', sans-serif;
+		font-weight: 700;
+	}
+
+	:global(p) {
+		font-family: 'Robotto', sans-serif;
 	}
 
 	.fullscreen {
@@ -45,5 +67,33 @@
 		height: 100%;
 		margin: 0;
 		padding: 0;
+	}
+
+	:global(.xxl) {
+		font-size: 48px;
+	}
+
+	:global(.xl) {
+		font-size: 32px;
+	}
+
+	:global(.l) {
+		font-size: 24px;
+	}
+
+	:global(.m) {
+		font-size: 20px;
+	}
+
+	:global(.s) {
+		font-size: 16px;
+	}
+
+	:global(.xs) {
+		font-size: 12px;
+	}
+
+	:global(.xxs) {
+		font-size: 10px;
 	}
 </style>
