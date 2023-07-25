@@ -44,7 +44,7 @@
 		height: 100%;
 	}
 
-	:global(h1, h2, h3, h4, p, a:link, a:visited) {
+	:global(h1, h2, h3, h4, p, a, a:link, a:visited) {
 		color: var(--onBg);
 		transition: color 0.3s ease;
 		margin: 0px;
@@ -55,7 +55,7 @@
 		font-weight: 700;
 	}
 
-	:global(p) {
+	:global(p, h3, h4, a, a:link, a:visited) {
 		font-family: 'Robotto', sans-serif;
 	}
 
@@ -101,9 +101,56 @@
 		font-size: var(--xxs);
 	}
 
-	:global(btn-primary) {
+	:global(.btn-primary) {
+		display: inline-block; /* Make the link behave like a block element */
 		background-color: var(--primary);
 		color: var(--onPrimary);
+		text-decoration: none; /* Remove underline */
 		font-size: var(--m);
+		padding: 12px 16px;
+		border-radius: 12px; /* Adjust the border radius to your liking */
+		transition: background-color 0.3s ease;
+
+		/* Change the color on hover */
+		&:hover {
+			background-color: var(--primary-inv);
+			color: var(--onPrimary); /* Keeps the text color constant on hover */
+		}
+	}
+
+	:global(.mt4) {
+		margin-top: 4px !important;
+	}
+
+	:global(.mt8) {
+		margin-top: 8px !important;
+	}
+
+	:global(.mt12) {
+		margin-top: 12px !important;
+	}
+
+	:global(.mt16) {
+		margin-top: 16px !important;
+	}
+
+	:global(.mt20) {
+		margin-top: 20px !important;
+	}
+
+	:global(.mt24) {
+		margin-top: 24px !important;
+	}
+
+	:global(.mt32) {
+		margin-top: 32px !important;
+	}
+
+	:global(.mt48) {
+		margin-top: 48px !important;
+	}
+
+	:global(.mt64) {
+		margin-top: 64px !important;
 	}
 </style>
