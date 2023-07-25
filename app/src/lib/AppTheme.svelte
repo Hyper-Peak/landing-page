@@ -32,7 +32,7 @@
 		align-items: center;
 	}
 
-	:global(h1, h2, h3, h4, p) {
+	:global(h1, h2, h3, h4, p, a:link, a:visited) {
 		color: var(--content);
 		transition: color 0.3s ease;
 	}
