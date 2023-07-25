@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let weight: float = 1;
+	export let weight: number = 1;
 </script>
 
 <div class="spacer-w" style="--weight:{weight};" />

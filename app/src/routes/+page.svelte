@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import Spacer from '$lib/components/Spacer.svelte';
 </script>
 
-<Spacer weight="2" />
+<Spacer weight={2} />
 
 <h1 class="xxl"><i>HyperPeak</i></h1>
 
@@ -11,7 +11,7 @@
 
 <a href="/services">Services</a>
 
-<Spacer weight="8" />
+<Spacer weight={8} />
 
 <style>
 </style>
