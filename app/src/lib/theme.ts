@@ -1,57 +1,25 @@
 import { writable } from 'svelte/store';
+import { darkColors, lightColors, type Colors } from './colors';
+import { typography, type Typography } from './typography';
 
-export const WHITE: string = '#f8f8ff'
-export const BLACK: string = '#1c1c1c'
-export const GRAY: string = '#c0c0c0'
-export const PRIMARY_LIGHT: string = '#003366'
-export const PRIMARY_DARK: string = '#6ebdff'
-export const SECONDARY_LIGHT: string = '#006666'
-export const SECONDARY_DARK: string = '#60c0bf'
-
-export type DS = {
-  theme: Theme,
-  isLight: boolean
-  colors: Colors
-}
-
-export type Colors = {
-  bg: string
-  onBg: string
-  gray: string
-  primary: string
-  onPrimary: string
-  secondary: string
-  onSecondary: string
-}
 
 export enum Theme {
   Light, Dark
 }
 
-const lightColors: Colors = {
-  bg: WHITE,
-  onBg: BLACK,
-  gray: GRAY,
-  primary: PRIMARY_LIGHT,
-  onPrimary: BLACK,
-  secondary: PRIMARY_LIGHT,
-  onSecondary: BLACK,
+export type DS = {
+  theme: Theme
+  isLight: boolean
+  colors: Colors
+  typo: Typography
 }
 
-const darkColors: Colors = {
-  bg: BLACK,
-  onBg: WHITE,
-  gray: GRAY,
-  primary: PRIMARY_DARK,
-  onPrimary: WHITE,
-  secondary: SECONDARY_DARK,
-  onSecondary: WHITE,
-}
 
 export const ds = writable<DS>({
   isLight: true,
   theme: Theme.Light,
   colors: lightColors,
+  typo: typography
 })
 
 export function setTheme(theme: Theme) {
@@ -60,13 +28,18 @@ export function setTheme(theme: Theme) {
       isLight: theme == Theme.Light,
       theme: theme,
       colors: theme == Theme.Light ? lightColors : darkColors,
+      typo: typography
     }
   )
 }
 
-export function colorsToCSS(colors: Colors): string {
-  return Object.entries(colors)
-    .map(([key, value]) => `--${key}:${value}`)
+export function dsToCssVars(ds: DS): string {
+  return objToCssVars(ds.colors) + objToCssVars(ds.typo, 'px')
+}
+
+export function objToCssVars(obj: object, valuePostFix: string = ''): string {
+  return Object.entries(obj)
+    .map(([key, value]) => `--${key}:${value}${valuePostFix}`)
     .join(';')
 }
 

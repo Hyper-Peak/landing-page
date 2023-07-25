@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { colorsToCSS, ds } from '$lib/theme';
+	import { ds, dsToCssVars } from '$lib/theme';
 	import NavBar from './navbar/NavBar.svelte';
 </script>
 
@@ -10,7 +10,7 @@
 	/>
 </svelte:head>
 
-<div id="root" class="fullscreen" style={colorsToCSS($ds.colors)}>
+<div id="root" class="fullscreen" style={dsToCssVars($ds)}>
 	<div id="navbar">
 		<NavBar />
 	</div>
@@ -69,36 +69,41 @@
 		padding: 0;
 	}
 
-
-	:global(.xxl) {
-		font-size: 64px;
+	:global(.xxxl) {
+		font-size: var(--xxxl);
 	}
 
 	:global(.xxl) {
-		font-size: 48px;
+		font-size: var(--xxl);
 	}
 
 	:global(.xl) {
-		font-size: 32px;
+		font-size: var(--xl);
 	}
 
 	:global(.l) {
-		font-size: 24px;
+		font-size: var(--l);
 	}
 
 	:global(.m) {
-		font-size: 20px;
+		font-size: var(--m);
 	}
 
 	:global(.s) {
-		font-size: 16px;
+		font-size: var(--s);
 	}
 
 	:global(.xs) {
-		font-size: 12px;
+		font-size: var(--xs);
 	}
 
 	:global(.xxs) {
-		font-size: 10px;
+		font-size: var(--xxs);
+	}
+
+	:global(btn-primary) {
+		background-color: var(--primary);
+		color: var(--onPrimary);
+		font-size: var(--m);
 	}
 </style>
