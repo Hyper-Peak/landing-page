@@ -3,6 +3,10 @@ import { writable } from 'svelte/store';
 export const WHITE: string = '#f8f8ff'
 export const BLACK: string = '#1c1c1c'
 export const GRAY: string = '#c0c0c0'
+export const PRIMARY_LIGHT: string = '#003366'
+export const PRIMARY_DARK: string = '#6ebdff'
+export const SECONDARY_LIGHT: string = '#006666'
+export const SECONDARY_DARK: string = '#60c0bf'
 
 export type DS = {
   theme: Theme,
@@ -12,24 +16,36 @@ export type DS = {
 
 export type Colors = {
   bg: string
-  content: string
+  onBg: string
   gray: string
+  primary: string
+  onPrimary: string
+  secondary: string
+  onSecondary: string
 }
 
 export enum Theme {
   Light, Dark
 }
 
-const lightColors = {
+const lightColors: Colors = {
   bg: WHITE,
-  content: BLACK,
+  onBg: BLACK,
   gray: GRAY,
+  primary: PRIMARY_LIGHT,
+  onPrimary: BLACK,
+  secondary: PRIMARY_LIGHT,
+  onSecondary: BLACK,
 }
 
-const darkColors = {
+const darkColors: Colors = {
   bg: BLACK,
-  content: WHITE,
+  onBg: WHITE,
   gray: GRAY,
+  primary: PRIMARY_DARK,
+  onPrimary: WHITE,
+  secondary: SECONDARY_DARK,
+  onSecondary: WHITE,
 }
 
 export const ds = writable<DS>({

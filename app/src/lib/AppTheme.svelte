@@ -45,7 +45,7 @@
 	}
 
 	:global(h1, h2, h3, h4, p, a:link, a:visited) {
-		color: var(--content);
+		color: var(--onBg);
 		transition: color 0.3s ease;
 		margin: 0px;
 	}
