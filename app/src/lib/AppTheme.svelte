@@ -4,7 +4,7 @@
 </script>
 
 <div id="root" class="fullscreen" style={colorsToCSS($ds.colors)}>
-	<NavBar/>
+	<NavBar />
 	<div id="content">
 		<slot />
 	</div>
@@ -13,7 +13,7 @@
 <style>
 	:global(body) {
 		background-color: var(--bg);
-        overscroll-behavior: none;
+		/* overscroll-behavior: none; */
 	}
 
 	#root {
@@ -27,9 +27,9 @@
 
 	#content {
 		display: flex;
-		justify-content: center;
 		flex-direction: column;
 		align-items: center;
+		height: 100%;
 	}
 
 	:global(h1, h2, h3, h4, p, a:link, a:visited) {
