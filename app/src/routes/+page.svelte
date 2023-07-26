@@ -23,4 +23,8 @@
 	.highlight {
 		color: var(--secondary)
 	}
+
+	p {
+		text-align: center;
+	}
 </style>
