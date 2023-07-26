@@ -8,7 +8,8 @@
 <h1 id="title" class="xxl"><b><i>HyperPeak</i></b></h1>
 
 <p class="l mt48">A software service company.</p>
-<p class="l mt16">We can build your product on all platforms.</p>
+<p class="l mt16">We can <span class="highlight"><b>build</b></span> your product 
+	on <span class="highlight"><b>all platforms.</b></span></p>
 <PrimaryButton href="/services" label="Our services" marginTop={52} />
 
 <Spacer weight={7} />
@@ -17,5 +18,9 @@
 	#title {
 		line-height: var(--xxl);
 		padding: 0px;
+	}
+
+	.highlight {
+		color: var(--secondary)
 	}
 </style>
