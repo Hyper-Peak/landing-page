@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-
 	export let href = '';
 	export let label = uppercaseFirst(href);
 
@@ -9,9 +7,7 @@
 	}
 </script>
 
-{#if $page.url.pathname !== href}
-	<a id="navlink" {href}>{label}</a>
-{/if}
+<a id="navlink" {href}>{label}</a>
 
 <style>
 	#navlink {

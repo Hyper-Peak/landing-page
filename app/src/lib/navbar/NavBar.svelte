@@ -1,11 +1,12 @@
 <script lang="ts">
 	import Spacer from '$lib/components/Spacer.svelte';
+	import HomeButton from './HomeButton.svelte';
 	import NavLink from './NavLink.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
 </script>
 
 <div id="navbar">
-	<NavLink href="/" label="Home" />
+	<HomeButton />
 	<NavLink href="/services" />
 	<NavLink href="/portfolio" />
 	<NavLink href="/pricing" />
