@@ -19,3 +19,8 @@ export const typography: Typography = {
     xs: 12,
     xxs: 10,
 }
+
+const nunito = "Nunito+Sans:700"
+const roboto = "Roboto:400,400i,600,700,800,900"
+
+export const fontsUrl = `https://fonts.googleapis.com/css?family=${nunito}|${roboto}&display=swap`

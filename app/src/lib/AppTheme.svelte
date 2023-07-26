@@ -1,13 +1,11 @@
 <script lang="ts">
 	import { ds, dsToCssVars } from '$lib/design-system';
 	import NavBar from './navbar/NavBar.svelte';
+	import { fontsUrl } from './typography';
 </script>
 
 <svelte:head>
-	<link
-		rel="stylesheet"
-		href="https://fonts.googleapis.com/css?family=Nunito+Sans:700|Roboto:400,400i,700&display=swap"
-	/>
+	<link rel="stylesheet" href={fontsUrl} />
 </svelte:head>
 
 <div id="root" class="fullscreen" style={dsToCssVars($ds)}>
@@ -134,8 +132,24 @@
 		margin-top: 32px !important;
 	}
 
+	:global(.mt36) {
+		margin-top: 36px !important;
+	}
+
+	:global(.mt40) {
+		margin-top: 40px !important;
+	}
+
+	:global(.mt44) {
+		margin-top: 44px !important;
+	}
+
 	:global(.mt48) {
 		margin-top: 48px !important;
+	}
+
+	:global(.mt56) {
+		margin-top: 56px !important;
 	}
 
 	:global(.mt64) {

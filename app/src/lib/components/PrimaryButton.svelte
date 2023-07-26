@@ -10,9 +10,10 @@
 	.btn-primary {
 		display: inline-block; /* Make the link behave like a block element */
 		background-color: var(--primary);
-		color: var(--onPrimary);
+		color: var(--white);
 		text-decoration: none; /* Remove underline */
-		font-size: var(--m);
+		font-size: var(--l);
+		font-weight: 400;
 		padding: 16px 48px;
 		border-radius: 32px; /* Adjust the border radius to your liking */
 		transition: color background-color 0.3s ease;
@@ -20,7 +21,7 @@
 		/* Change the color on hover */
 		&:hover {
 			background-color: var(--secondary) !important;
-			color: var(--onSecondary) !important;
+			color: var(--white) !important;
 		}
 	}
 </style>

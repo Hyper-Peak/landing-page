@@ -3,12 +3,19 @@
 	import Spacer from '$lib/components/Spacer.svelte';
 </script>
 
-<Spacer weight={2} />
+<Spacer weight={3} />
 
-<h1 class="xxl"><b><i>HyperPeak</i></b></h1>
+<h1 id="title" class="xxl"><b><i>HyperPeak</i></b></h1>
 
 <p class="l mt48">A software service company.</p>
-<p class="l mt12">We build mobile, web and desktop apps.</p>
-<PrimaryButton href="/services" label="Services" marginTop={48} />
+<p class="l mt16">We can build your product on all platforms.</p>
+<PrimaryButton href="/services" label="Our services" marginTop={52} />
 
-<Spacer weight={8} />
+<Spacer weight={7} />
+
+<style>
+	#title {
+		line-height: var(--xxl);
+		padding: 0px;
+	}
+</style>

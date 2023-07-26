@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import { darkColors, lightColors, type Colors } from './colors';
+import { darkColors, lightColors, type Colors, globalColors } from './colors';
 import { typography, type Typography } from './typography';
 
 
@@ -34,13 +34,13 @@ export function setTheme(theme: Theme) {
 }
 
 export function dsToCssVars(ds: DS): string {
-  return objToCssVars(ds.colors) + objToCssVars(ds.typo, 'px')
+  return objToCssVars(ds.colors) + objToCssVars(globalColors) + objToCssVars(ds.typo, 'px')
 }
 
 export function objToCssVars(obj: object, valuePostFix: string = ''): string {
   return Object.entries(obj)
     .map(([key, value]) => `--${key}:${value}${valuePostFix}`)
-    .join(';')
+    .join(';') + ';'
 }
 
 export function prefersDarkTheme(): boolean {
