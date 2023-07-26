@@ -13,13 +13,14 @@
 		color: var(--white);
 		text-decoration: none;
 		font-size: var(--l);
-		font-weight: bold;
+		font-weight: normal;
 		padding: 16px 48px;
 		border-radius: 32px;
 		transition: color background-color 0.3s ease;
 	}
 
 	#btn-primary:hover {
-		font-weight: normal;
+		background-color: #62ABF5;
+		color: var(--black);
 	}
 </style>
