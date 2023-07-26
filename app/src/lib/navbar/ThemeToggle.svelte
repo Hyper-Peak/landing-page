@@ -32,15 +32,15 @@
 		border: none;
 		width: 32px;
 		height: 32px;
-		border: 1px solid;
+		border: 2px solid;
 		border-color: var(--onBg);
-		padding: 2px;
 		border-radius: 50%;
 	}
 
 	img {
 		padding: 0px;
-		width: 32px;
-		height: 32px;
+		width: 22px;
+		height: 22px;
+		image-rendering: optimizeSpeed;
 	}
 </style>
