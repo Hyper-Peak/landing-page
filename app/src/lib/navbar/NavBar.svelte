@@ -4,7 +4,7 @@
 	import ThemeToggle from './ThemeToggle.svelte';
 </script>
 
-<div id="appbar">
+<div id="navbar">
 	<NavLink href="/" label="Home" />
 	<NavLink href="/services" />
 	<NavLink href="/portfolio" />
@@ -18,21 +18,20 @@
 </div>
 
 <style>
-	#appbar {
+	#navbar {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		flex-wrap: wrap;
 		gap: 16px;
+		row-gap: 16px;
+		justify-content: center;
 	}
 
 	/* Mobile styles (screens smaller than 600px) */
 	@media (max-width: 600px) {
-		#appbar {
+		#navbar {
 			padding: 8px; /* Mobile padding */
 		}
-	}
-
-	.spacer-w {
-		flex-grow: 1;
 	}
 </style>
