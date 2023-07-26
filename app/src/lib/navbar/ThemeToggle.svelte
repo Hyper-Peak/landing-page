@@ -1,21 +1,31 @@
 <script lang="ts">
 	import Moon from '$lib/assets/moon.svg';
 	import Sun from '$lib/assets/sun.svg';
-	import { Theme, ds, prefersDarkTheme, setTheme } from '$lib/design-system';
+	import { globalColors, PRIMARY_DARK } from '$lib/colors';
+	import { ds, prefersDarkTheme, setTheme, Theme } from '$lib/design-system';
 	import { onMount } from 'svelte';
+
+	let hoverColor = globalColors.orange;
+
+	onMount(() => {
+		if (prefersDarkTheme()) {
+			setTheme(Theme.Dark);
+			hoverColor = PRIMARY_DARK;
+		}
+	});
 
 	function toggleTheme() {
 		setTheme($ds.isLight ? Theme.Dark : Theme.Light);
 	}
 
-	onMount(() => {
-		if (prefersDarkTheme()) {
-			setTheme(Theme.Dark);
-		}
+	ds.subscribe((ds) => {
+		hoverColor = ds.isLight ? globalColors.orange : PRIMARY_DARK;
 	});
+
+	$: style = `--hoverColor: ${hoverColor};`;
 </script>
 
-<button id="toggle" on:click={toggleTheme}>
+<button id="toggle" on:click={toggleTheme} {style}>
 	{#if $ds.isLight}
 		<img src={Sun} alt="Sun" />
 	{:else}
@@ -35,6 +45,10 @@
 		border: 2px solid;
 		border-color: var(--onBg);
 		border-radius: 50%;
+	}
+
+	#toggle:hover {
+		background-color: var(--hoverColor) !important;
 	}
 
 	img {

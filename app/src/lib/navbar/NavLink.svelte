@@ -10,5 +10,17 @@
 </script>
 
 {#if $page.url.pathname !== href}
-	<a {href}>{label}</a>
+	<a id="navlink" {href}>{label}</a>
 {/if}
+
+<style>
+	#navlink {
+		font-size: var(--s);
+		text-decoration: none;
+		padding: 12px 0px;
+	}
+
+	#navlink:hover {
+		color: var(--secondary);
+	}
+</style>
