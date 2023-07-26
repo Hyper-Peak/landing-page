@@ -21,7 +21,15 @@
 	#appbar {
 		display: flex;
 		flex-direction: row;
-		gap: 8px;
+		align-items: center;
+		gap: 16px;
+	}
+
+	/* Mobile styles (screens smaller than 600px) */
+	@media (max-width: 600px) {
+		#appbar {
+			padding: 8px; /* Mobile padding */
+		}
 	}
 
 	.spacer-w {

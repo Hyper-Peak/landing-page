@@ -5,6 +5,8 @@ export const PRIMARY_LIGHT: string = '#3380CC'
 export const PRIMARY_DARK: string = '#3380CC'
 export const SECONDARY_LIGHT: string = '#10A372'
 export const SECONDARY_DARK: string = '#14CC8F'
+export const ORANGE: string = "#F5D018;"
+export const RED: string = "#F53D3D"
 
 
 export type Colors = {
@@ -18,11 +20,15 @@ export type Colors = {
 export type GlobalColors = {
     white: string
     black: string
+    orange: string
+    red: string
 }
 
-export const globalColors: Gl = {
+export const globalColors: GlobalColors = {
     white: WHITE,
     black: BLACK,
+    orange: ORANGE,
+    red: RED,
 }
 
 export const lightColors: Colors = {

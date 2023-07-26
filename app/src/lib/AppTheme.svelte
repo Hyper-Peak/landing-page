@@ -35,6 +35,13 @@
 		transition: background-color 0.3s ease;
 	}
 
+	@media (max-width: 600px) {
+		#root {
+			padding-left: 16px; 
+			padding-right: 16px;
+		}
+	}
+
 	#content {
 		display: flex;
 		flex-direction: column;

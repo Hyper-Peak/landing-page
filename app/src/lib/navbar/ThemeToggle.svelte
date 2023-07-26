@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Moon from '$lib/assets/moon.svg';
+	import Sun from '$lib/assets/sun.svg';
 	import { Theme, ds, prefersDarkTheme, setTheme } from '$lib/design-system';
 	import { onMount } from 'svelte';
 
@@ -13,6 +15,32 @@
 	});
 </script>
 
-<button on:click={toggleTheme}>
-	{$ds.isLight ? 'Go Dark' : 'Go Light'}
+<button id="toggle" on:click={toggleTheme}>
+	{#if $ds.isLight}
+		<img src={Sun} alt="Sun" />
+	{:else}
+		<img src={Moon} alt="Moon" />
+	{/if}
 </button>
+
+<style>
+	#toggle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: none;
+		border: none;
+		width: 32px;
+		height: 32px;
+		border: 1px solid;
+		border-color: var(--onBg);
+		padding: 2px;
+		border-radius: 50%;
+	}
+
+	img {
+		padding: 0px;
+		width: 32px;
+		height: 32px;
+	}
+</style>
