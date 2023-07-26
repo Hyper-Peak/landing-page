@@ -1,10 +1,10 @@
-export const WHITE: string = '#f8f8ff'
-export const BLACK: string = '#1c1c1c'
-export const GRAY: string = '#c0c0c0'
-export const PRIMARY_LIGHT: string = '#003366'
-export const PRIMARY_DARK: string = '#6ebdff'
-export const SECONDARY_LIGHT: string = '#006666'
-export const SECONDARY_DARK: string = '#60c0bf'
+export const WHITE: string = '#E9E9F5'
+export const BLACK: string = '#09090A'
+export const GRAY: string = '#74747A'
+export const PRIMARY_LIGHT: string = '#3E99F5'
+export const PRIMARY_DARK: string = '#3E99F5'
+export const SECONDARY_LIGHT: string = '#14CC8F'
+export const SECONDARY_DARK: string = '#14CC8F'
 
 
 export type Colors = {
