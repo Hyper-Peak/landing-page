@@ -8,7 +8,7 @@
 <div id="navbar">
 	<HomeButton />
 	<NavLink href="/services" />
-	<NavLink href="/portfolio" />
+	<NavLink href="/projects" />
 	<NavLink href="/pricing" />
 
 	<Spacer />
