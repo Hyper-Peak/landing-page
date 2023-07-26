@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { ds, dsToCssVars } from '$lib/design-system';
 	import NavBar from './navbar/NavBar.svelte';
 	import { fontsUrl } from './typography';
@@ -12,9 +13,11 @@
 	<div id="navbar">
 		<NavBar />
 	</div>
-	<div id="content">
-		<slot />
-	</div>
+	{#key $page.url.pathname}
+		<div id="content">
+			<slot />
+		</div>
+	{/key}
 </div>
 
 <style>
@@ -32,13 +35,24 @@
 		padding-bottom: 32px;
 		background-color: var(--bg);
 		box-sizing: border-box;
-		transition: background-color 0.3s ease;
+		transition: background-color 0.3s ease-in;
 	}
 
 	@media (max-width: 600px) {
 		#root {
-			padding-left: 16px; 
+			padding-left: 16px;
 			padding-right: 16px;
+		}
+	}
+
+	@keyframes fadeInSlideUp {
+		0% {
+			opacity: 0;
+			transform: translateY(32px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 
@@ -47,6 +61,7 @@
 		flex-direction: column;
 		align-items: center;
 		height: 100%;
+		animation: fadeInSlideUp 0.4s ease-in forwards;
 	}
 
 	:global(h1, h2, h3, h4, p, a, a:link, a:visited) {
