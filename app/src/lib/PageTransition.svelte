@@ -20,7 +20,11 @@
 		}
 	}
 
-    #content {
-        animation: fadeInSlideUp 0.5s ease-out forwards;   
-    }
+	#content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		animation: fadeInSlideUp 0.5s ease-out forwards;
+	}
 </style>

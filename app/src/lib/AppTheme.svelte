@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { ds, dsToCssVars } from '$lib/design-system';
+	import PageTransition from './PageTransition.svelte';
 	import NavBar from './navbar/NavBar.svelte';
 	import { fontsUrl } from './typography';
 </script>
@@ -13,11 +13,9 @@
 	<div id="navbar">
 		<NavBar />
 	</div>
-	{#key $page.url.pathname}
-		<div id="content">
-			<slot />
-		</div>
-	{/key}
+	<PageTransition>
+		<slot />
+	</PageTransition>
 </div>
 
 <style>
@@ -43,25 +41,6 @@
 			padding-left: 16px;
 			padding-right: 16px;
 		}
-	}
-
-	@keyframes fadeInSlideUp {
-		0% {
-			opacity: 0;
-			transform: translateY(32px);
-		}
-		100% {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
-	#content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		height: 100%;
-		animation: fadeInSlideUp 0.4s ease-in forwards;
 	}
 
 	:global(h1, h2, h3, h4, p, a, a:link, a:visited) {
