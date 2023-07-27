@@ -20,7 +20,11 @@
 	}
 </script>
 
-<a id="navlink" {href} {style}>{label}</a>
+{#if $page.url.pathname == href}
+	<b><a id="navlink" {href} {style}>{label}</a></b>
+{:else}
+	<a id="navlink" {href} {style}>{label}</a>
+{/if}
 
 <style>
 	#navlink {
