@@ -64,6 +64,8 @@
 		height: auto;
 		width: 100%;
 		flex-grow: 1;
+
+		transition: background-color 0.3s ease-in;
 	}
 
 	ol {
