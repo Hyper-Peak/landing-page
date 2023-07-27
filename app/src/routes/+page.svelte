@@ -3,14 +3,16 @@
 	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
 </script>
 
-<h1 id="title" class="xxl mt48"><b><i>HyperPeak</i></b></h1>
+<div id="main">
+	<h1 id="title" class="xxl mt48"><b><i>HyperPeak</i></b></h1>
 
-<p class="l mt32">A software service company.</p>
-<p class="l mt16">
-	We can <a href="/services" class="highlight">build</a> your product on
-	<a href="/services" class="highlight">all platforms.</a>
-</p>
-<PrimaryButton href="/services" label="Our services" marginTop={24} />
+	<p class="l mt32">A software service company.</p>
+	<p class="l mt16">
+		We can <a href="/services" class="highlight">build</a> your product on
+		<a href="/services" class="highlight">all platforms.</a>
+	</p>
+	<PrimaryButton href="/services" label="Our services" marginTop={24} />
+</div>
 
 <hr class="divider" />
 
@@ -33,6 +35,14 @@
 		padding-right: 8px;
 	}
 
+	#main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 40%;
+		padding-bottom: 24px;
+	}
+
 	#title {
 		line-height: var(--xxl);
 		padding: 0px;
@@ -43,25 +53,24 @@
 	}
 
 	.divider {
-		width: 25%;
+		width: 20%;
 		height: 2px;
 		background-color: var(--gray);
 		border: none;
 		border-radius: 8px;
 		margin: 0 auto;
-		margin-top: 24px;
 	}
 
 	#tldr {
 		display: flex;
 		padding-top: 24px;
-	
+
 		padding-bottom: 48px;
 		flex-direction: column;
 		align-items: center;
 		border-radius: 32px 32px 0px 0px;
 		background-color: var(--bg2);
-		height: auto;
+		height: 50%;
 		width: 100%;
 		flex-grow: 1;
 
