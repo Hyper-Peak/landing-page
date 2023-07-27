@@ -4,13 +4,15 @@
 	export let label: string;
 </script>
 
-<a {href} id="btn-primary" style="margin-top: {marginTop}px">{label}</a>
+<a {href} id="btn-secondary" style="margin-top: {marginTop}px">{label}</a>
 
 <style>
-	#btn-primary {
+	#btn-secondary {
 		display: inline-block;
-		background-color: var(--primary);
-		color: var(--white);
+		border-color: var(--secondary);
+		border-width: 2px;
+		border-style: solid;
+		color: var(--onBg);
 		text-decoration: none;
 		font-size: var(--l);
 		font-weight: normal;
@@ -19,8 +21,8 @@
 		transition: color background-color 0.3s ease;
 	}
 
-	#btn-primary:hover {
-		background-color: #62ABF5;
-		color: var(--black);
+	#btn-secondary:hover {
+		background-color: var(--secondary);
+		color: var(--white);
 	}
 </style>

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href={fontsUrl} />
 </svelte:head>
 
-<div id="root" class="fullscreen" style={dsToCssVars($ds)}>
+<div id="root" style={dsToCssVars($ds)}>
 	<div id="navbar">
 		<NavBar />
 	</div>
@@ -21,12 +21,15 @@
 <style>
 	:global(body) {
 		background-color: var(--bg);
-		/* overscroll-behavior: none; */
+		margin: 0;
+		padding: 0;
 	}
 
 	#root {
-		width: 100vw;
-		height: 100vh;
+		min-width: 100vw;
+		height: auto;
+		margin: 0px;
+		min-height: 100vh;
 		padding-top: 24px;
 		padding-left: 32px;
 		padding-right: 32px;
@@ -43,7 +46,7 @@
 		}
 	}
 
-	:global(h1, h2, h3, h4, p, a, a:link, a:visited) {
+	:global(h1, h2, h3, h4, p, a, a:link, a:visited, li) {
 		color: var(--onBg);
 		transition: color 0.3s ease;
 		margin: 0px;
@@ -57,16 +60,6 @@
 
 	:global(p, h3, h4, a, a:link, a:visited) {
 		font-family: 'Robotto', sans-serif;
-	}
-
-	.fullscreen {
-		position: absolute; /* or fixed */
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
 	}
 
 	:global(.xxxl) {
