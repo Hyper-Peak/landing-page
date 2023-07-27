@@ -14,7 +14,7 @@
 		border-style: solid;
 		color: var(--onBg);
 		text-decoration: none;
-		font-size: var(--l);
+		font-size: var(--m);
 		font-weight: normal;
 		padding: 12px 32px;
 		border-radius: 32px;

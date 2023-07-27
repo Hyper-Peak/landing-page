@@ -12,7 +12,7 @@
 		background-color: var(--primary);
 		color: var(--white);
 		text-decoration: none;
-		font-size: var(--l);
+		font-size: var(--m);
 		font-weight: normal;
 		padding: 12px 32px;
 		border-radius: 32px;
