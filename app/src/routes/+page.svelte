@@ -87,6 +87,7 @@
 
 	li {
 		font-size: var(--m);
+		padding-right: 8px;
 		margin-top: 16px;
 	}
 
