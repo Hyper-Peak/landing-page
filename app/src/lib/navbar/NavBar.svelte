@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Spacer from '$lib/components/Spacer.svelte';
 	import HomeButton from './HomeButton.svelte';
 	import NavLink from './NavLink.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
@@ -11,7 +10,7 @@
 	<NavLink href="/projects" />
 	<NavLink href="/pricing" />
 
-	<Spacer />
+	<div class="spacer-w" />
 
 	<NavLink href="/contact" />
 	<NavLink href="/blog" />
@@ -39,5 +38,9 @@
 			padding-left: 8px;
 			padding-right: 8px;
 		}
+	}
+
+	.spacer-w {
+		flex-grow: 1;
 	}
 </style>
