@@ -29,7 +29,6 @@
 		min-width: 100vw;
 		height: 100vh;
 		margin: 0px;
-		min-height: 100vh;
 		padding: 0px;
 		background-color: var(--bg);
 		box-sizing: border-box;
