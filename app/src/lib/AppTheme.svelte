@@ -33,7 +33,7 @@
 		padding-top: 24px;
 		padding-left: 32px;
 		padding-right: 32px;
-		padding-bottom: 32px;
+		padding-bottom: 48px;
 		background-color: var(--bg);
 		box-sizing: border-box;
 		transition: background-color 0.3s ease-in;
