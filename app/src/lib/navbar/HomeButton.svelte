@@ -34,8 +34,8 @@
 		justify-content: center;
 		background: none;
 		border: none;
-		width: 32px;
-		height: 32px;
+		width: 24px;
+		height: 24px;
 	}
 
 	img {
