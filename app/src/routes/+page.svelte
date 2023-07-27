@@ -55,8 +55,7 @@
 	#tldr {
 		display: flex;
 		padding-top: 24px;
-		padding-left: 8px;
-		padding-right: 8px;
+	
 		padding-bottom: 48px;
 		flex-direction: column;
 		align-items: center;
