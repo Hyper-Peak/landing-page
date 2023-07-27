@@ -16,7 +16,7 @@
 
 <hr class="divider" />
 
-<div id="tldr">
+<div id="tldr" class="show-later">
 	<h3 id="how">How it works?</h3>
 	<ol>
 		<li>Tell us your project and budget. 💡</li>
@@ -42,6 +42,16 @@
 		justify-content: center;
 		height: 40%;
 		padding-bottom: 24px;
+
+		transform: translateY(50%);
+
+		animation: moveMain 0.5s 3s ease-in forwards;
+	}
+
+	@keyframes moveMain {
+		100% {
+			transform: translateY(0);
+		}
 	}
 
 	#title {
@@ -56,6 +66,37 @@
 		border: none;
 		border-radius: 8px;
 		margin: 0 auto;
+
+		/* Initially invisible */
+		opacity: 0;
+		visibility: hidden;
+
+		animation: fadeInSlideUp 0.5s 3.5s ease-in forwards;
+	}
+
+	.show-later {
+		/* Initially invisible */
+		opacity: 0;
+		visibility: hidden;
+
+		animation: fadeInSlideUp 0.5s 3s ease-in forwards;
+	}
+
+	@keyframes fadeInSlideUp {
+		0% {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(20%);
+		}
+		/* Slightly after start */
+		1% {
+			visibility: visible;
+		}
+		100% {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
 	}
 
 	#tldr {
