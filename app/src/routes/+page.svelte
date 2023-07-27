@@ -105,5 +105,7 @@
 
 	p {
 		text-align: center;
+		margin-left: 8px;
+		margin-right: 8px;
 	}
 </style>
