@@ -27,6 +27,12 @@
 </div>
 
 <style>
+	h1,
+	p {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
 	#title {
 		line-height: var(--xxl);
 		padding: 0px;
@@ -36,22 +42,29 @@
 		font-size: var(--xl);
 	}
 
-	#tldr {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
 	.divider {
 		width: 25%;
-		height: 1px;
+		height: 2px;
 		background-color: var(--gray);
 		border: none;
-		border-radius: 50%;
+		border-radius: 8px;
 		margin: 0 auto;
+		margin-top: 24px;
+	}
 
-		margin-top: 48px;
-		margin-bottom: 44px;
+	#tldr {
+		display: flex;
+		padding-top: 24px;
+		padding-left: 8px;
+		padding-right: 8px;
+		padding-bottom: 48px;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 32px 32px 0px 0px;
+		background-color: #1b1b1b;
+		height: auto;
+		width: 100%;
+		flex-grow: 1;
 	}
 
 	ol {

@@ -26,6 +26,8 @@
 		flex-wrap: wrap;
 		gap: 16px;
 		row-gap: 0px;
+		padding-left: 32px;
+		padding-right: 32px;
 		justify-content: end;
 	}
 
@@ -34,6 +36,8 @@
 		#navbar {
 			padding: 8px;
 			gap: 12px;
+			padding-left: 16px;
+			padding-right: 16px;
 		}
 	}
 </style>

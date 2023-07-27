@@ -27,23 +27,16 @@
 
 	#root {
 		min-width: 100vw;
-		height: auto;
+		height: 100vh;
 		margin: 0px;
 		min-height: 100vh;
 		padding-top: 24px;
-		padding-left: 32px;
-		padding-right: 32px;
-		padding-bottom: 48px;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
 		background-color: var(--bg);
 		box-sizing: border-box;
 		transition: background-color 0.3s ease-in;
-	}
-
-	@media (max-width: 600px) {
-		#root {
-			padding-left: 16px;
-			padding-right: 16px;
-		}
 	}
 
 	:global(h1, h2, h3, h4, p, a, a:link, a:visited, li) {
