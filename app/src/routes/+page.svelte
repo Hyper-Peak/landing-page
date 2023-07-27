@@ -17,7 +17,7 @@
 <hr class="divider" />
 
 <div id="tldr">
-	<h3 id="how">How does it work?</h3>
+	<h3 id="how">How it works?</h3>
 	<ol>
 		<li>Tell us your project and budget. 💡</li>
 		<li>We'll confirm if we can build it. 📊</li>
@@ -74,7 +74,8 @@
 	}
 
 	#how {
-		font-size: var(--xl);
+		font-size: var(--l);
+		font-weight: bold;
 		padding-bottom: 0px;
 		margin-bottom: 0px;
 	}
