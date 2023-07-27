@@ -25,14 +25,15 @@
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 16px;
-		row-gap: 16px;
-		justify-content: center;
+		row-gap: 0px;
+		justify-content: end;
 	}
 
 	/* Mobile styles (screens smaller than 600px) */
 	@media (max-width: 600px) {
 		#navbar {
-			padding: 8px; /* Mobile padding */
+			padding: 8px;
+			gap: 12px;
 		}
 	}
 </style>
