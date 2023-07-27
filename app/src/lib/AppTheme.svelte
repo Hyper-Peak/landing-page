@@ -58,7 +58,7 @@
 		font-weight: 700;
 	}
 
-	:global(p, h3, h4, a, a:link, a:visited) {
+	:global(p, h3, h4, a, a:link, a:visited, li) {
 		font-family: 'Robotto', sans-serif;
 	}
 
