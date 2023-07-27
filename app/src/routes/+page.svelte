@@ -8,8 +8,10 @@
 <h1 id="title" class="xxl"><b><i>HyperPeak</i></b></h1>
 
 <p class="l mt48">A software service company.</p>
-<p class="l mt16">We can <span class="highlight"><b>build</b></span> your product 
-	on <span class="highlight"><b>all platforms.</b></span></p>
+<p class="l mt16">
+	We can <a href="/services" class="highlight">build</a> your product on
+	<a href="/services" class="highlight">all platforms.</a>
+</p>
 <PrimaryButton href="/services" label="Our services" marginTop={52} />
 
 <Spacer weight={7} />
@@ -21,7 +23,13 @@
 	}
 
 	.highlight {
-		color: var(--secondary)
+		color: var(--secondary);
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.highlight:hover {
+		color: var(--primary);
 	}
 
 	p {
