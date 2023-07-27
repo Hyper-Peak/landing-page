@@ -53,7 +53,7 @@
 		padding: 0px;
 	}
 
-	:global(h1, h2) {
+	:global(h1, h2, h3) {
 		font-family: 'Nunito Sans', sans-serif;
 		font-weight: 700;
 	}

@@ -3,7 +3,7 @@
 	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
 </script>
 
-<h1 id="title" class="xxl mt64"><b><i>HyperPeak</i></b></h1>
+<h1 id="title" class="xxl mt48"><b><i>HyperPeak</i></b></h1>
 
 <p class="l mt32">A software service company.</p>
 <p class="l mt16">
