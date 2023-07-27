@@ -60,7 +60,7 @@
 		flex-direction: column;
 		align-items: center;
 		border-radius: 32px 32px 0px 0px;
-		background-color: #1b1b1b;
+		background-color: var(--bg2);
 		height: auto;
 		width: 100%;
 		flex-grow: 1;

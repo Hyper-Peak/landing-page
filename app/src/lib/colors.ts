@@ -1,5 +1,7 @@
 export const WHITE: string = '#E9E9F5'
+export const KINDA_WHITE: string = '#DFDFEB'
 export const BLACK: string = '#09090A'
+export const KINDA_BLACK: string = '#1C1C1F'
 export const GRAY: string = '#74747A'
 
 export const PRIMARY_LIGHT: string = '#3380CC'
@@ -15,6 +17,7 @@ export const RED: string = "#F53D3D"
 export type Colors = {
     bg: string
     onBg: string
+    bg2: string
     gray: string
     primary: string
     secondary: string
@@ -37,6 +40,7 @@ export const globalColors: GlobalColors = {
 export const lightColors: Colors = {
     bg: WHITE,
     onBg: BLACK,
+    bg2: KINDA_WHITE,
     gray: GRAY,
     primary: PRIMARY_LIGHT,
     secondary: SECONDARY_LIGHT,
@@ -45,6 +49,7 @@ export const lightColors: Colors = {
 export const darkColors: Colors = {
     bg: BLACK,
     onBg: WHITE,
+    bg2: KINDA_BLACK,
     gray: GRAY,
     primary: PRIMARY_DARK,
     secondary: SECONDARY_DARK,
