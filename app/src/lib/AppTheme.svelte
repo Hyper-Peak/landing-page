@@ -52,7 +52,7 @@
 	}
 
 	:global(p, h3, h4, a, a:link, a:visited, li) {
-		font-family: 'Robotto', sans-serif;
+		font-family: 'Roboto', sans-serif;
 	}
 
 	:global(.xxxl) {
