@@ -22,13 +22,13 @@
 
 {#if $page.url.pathname != '/'}
 	<!-- svelte-ignore a11y-mouse-events-have-key-events -->
-	<a href="/" id="btn" on:mouseover={onHover} on:mouseout={onHoverEnd} on:mousedown={onHoverEnd}>
+	<a href="/" on:mouseover={onHover} on:mouseout={onHoverEnd} on:mousedown={onHoverEnd}>
 		<img {src} alt="HyperPeak" />
 	</a>
 {/if}
 
 <style>
-	#btn {
+	a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -40,8 +40,8 @@
 
 	img {
 		padding: 0px;
-		width: 32px;
-		height: 32px;
+		width: 24px;
+		height: 24px;
 		image-rendering: optimizeSpeed;
 	}
 </style>
