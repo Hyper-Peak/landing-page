@@ -34,7 +34,7 @@
 	@media (max-width: 600px) {
 		#navbar {
 			padding: 8px;
-			gap: 12px;
+			gap: 8px;
 			padding-left: 8px;
 			padding-right: 8px;
 		}
