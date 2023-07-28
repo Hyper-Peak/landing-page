@@ -9,6 +9,8 @@
 	import Svelte from '$lib/assets/technologies/svelte-logo.svg';
 	import TypeScript from '$lib/assets/technologies/typescript-logo.svg';
 	import Web from '$lib/assets/technologies/web.svg';
+	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
+	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
 	import Service from './components/ServiceCard.svelte';
 	import SomethingElse from './components/SomethingElse.svelte';
 	import Technology from './components/Technology.svelte';
@@ -66,15 +68,24 @@
 		<SomethingElse />
 	</div>
 
-	<h2 class="mt24">Why these technologies?</h2>
-	<p>
-		Lorem ipsum.
+	<h2 class="mt24">Why Kotlin & Svelte?</h2>
+	<p class="mt8">
+		We use modern technologies with elegant software design.<br />
+		This allows us to craft simple and peak performance software.<br />
+		For example, like this website and our other app in
+		<a href="/projects" class="highlight">projects</a>.
 	</p>
 
-	<h2 class="mt24">Why these technologies?</h2>
-	<p>
-		Lorem ipsum.
+	<h2 class="mt24">What next?</h2>
+	<p class="mt8">
+		You can check our projects and see if we're good enough.<br />
+		Or see how we work and get a quote for your project.
 	</p>
+
+	<div class="ctas-row mt12">
+		<PrimaryButton href="/pricing" label="Let's work!" />
+		<SecondaryButton href="/projects" label="Our projects" />
+	</div>
 </div>
 
 <style>
@@ -104,6 +115,7 @@
 	p {
 		margin-top: 8px;
 		font-size: var(--m);
+		line-height: calc(var(--m) + 8px);
 		padding-left: 8px;
 		padding-right: 8px;
 		text-align: center;
@@ -132,5 +144,21 @@
 			padding-left: 8px;
 			padding-right: 8px;
 		}
+	}
+
+	.highlight {
+		color: var(--secondary);
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.ctas-row {
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 </style>

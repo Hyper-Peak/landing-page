@@ -14,7 +14,7 @@
 	}
 </script>
 
-<a href="/contact" id="service">
+<a href="/pricing" id="service">
 	<div id="header">
 		{#if logoSrc != null}
 			<img src={logoSrc} alt={name} class="logo" />
