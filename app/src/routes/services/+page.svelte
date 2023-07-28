@@ -9,7 +9,7 @@
 	import Svelte from '$lib/assets/technologies/svelte-logo.svg';
 	import TypeScript from '$lib/assets/technologies/typescript-logo.svg';
 	import Web from '$lib/assets/technologies/web.svg';
-	import Service from './components/Service.svelte';
+	import Service from './components/ServiceCard.svelte';
 	import SomethingElse from './components/SomethingElse.svelte';
 	import Technology from './components/Technology.svelte';
 </script>

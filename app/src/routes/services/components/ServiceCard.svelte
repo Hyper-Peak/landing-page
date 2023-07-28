@@ -14,7 +14,7 @@
 	}
 </script>
 
-<div id="service">
+<a href="/contact" id="service">
 	<div id="header">
 		{#if logoSrc != null}
 			<img src={logoSrc} alt={name} class="logo" />
@@ -23,7 +23,7 @@
 	</div>
 	<h4>Tech stack</h4>
 	<slot />
-</div>
+</a>
 
 <style>
 	#service {
@@ -38,6 +38,11 @@
 		align-items: start;
 		align-content: center;
 		gap: 8px;
+		text-decoration: none;
+	}
+
+	#service:hover {
+		background-color: var(--primary);
 	}
 
 	#header {
