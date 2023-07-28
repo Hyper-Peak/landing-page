@@ -17,18 +17,20 @@
 		width: 100%;
 		justify-content: center;
 		align-items: center;
-        margin-left: 8px;
-        margin-right: 8px;
 	}
 
 	#title {
 		font-size: var(--xxl);
 		font-weight: bold;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 
 	#constr {
 		font-size: var(--xl);
 		color: var(--orange);
 		margin-bottom: 12px;
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 </style>
