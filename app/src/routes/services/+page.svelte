@@ -54,7 +54,7 @@
 
 	<Service name="Something else?">
 		<p>Ask us. We'll let you know if we can build it.</p>
-		<SecondaryButton href="/contact" label="Cotact us" />
+		<SecondaryButton href="/contact" label="Contact us" />
 	</Service>
 </div>
 

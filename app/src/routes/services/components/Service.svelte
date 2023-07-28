@@ -31,10 +31,10 @@
 		flex-direction: column;
 	}
 
-	/* .logo {
+	.logo {
 		width: 24px;
 		height: 24px;
-	} */
+	}
 
 	h2 {
 		font-size: var(--l);
