@@ -79,7 +79,7 @@
 	<h2 class="mt32">What next?</h2>
 	<p class="mt8">
 		You can check our projects and see if HyperPeak is a good pick for you.<br/>
-		Or directly contact us and <a href="/contact" class="highlight">get a quote</a> for your project.
+		Otherwise, you can directly contact us and <a href="/contact" class="highlight">get a quote</a>.
 	</p>
 
 	<div class="ctas-row mt16">
