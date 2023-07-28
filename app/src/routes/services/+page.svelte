@@ -15,7 +15,7 @@
 </script>
 
 <div id="content">
-	<h1 id="title">Software development</h1>
+	<h1>Software development</h1>
 
 	<div id="services" class="mt24">
 		<Service name="Android" logo={Android}>
@@ -65,6 +65,16 @@
 
 		<SomethingElse />
 	</div>
+
+	<h2 class="mt24">Why these technologies?</h2>
+	<p>
+		Lorem ipsum.
+	</p>
+
+	<h2 class="mt24">Why these technologies?</h2>
+	<p>
+		Lorem ipsum.
+	</p>
 </div>
 
 <style>
@@ -72,11 +82,28 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding-bottom: 48px;
 	}
 
-	#title {
+	h1 {
 		font-size: var(--xl);
 		line-height: var(--xl);
+		padding-left: 8px;
+		padding-right: 8px;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: var(--l);
+		font-size: var(--l);
+		padding-left: 8px;
+		padding-right: 8px;
+		text-align: center;
+	}
+
+	p {
+		margin-top: 8px;
+		font-size: var(--m);
 		padding-left: 8px;
 		padding-right: 8px;
 		text-align: center;
@@ -91,7 +118,7 @@
 		padding-right: 16px;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 800px) {
 		#services {
 			grid-template-columns: repeat(2, 1fr);
 			padding-left: 8px;
@@ -99,7 +126,7 @@
 		}
 	}
 
-	@media (max-width: 420px) {
+	@media (max-width: 500px) {
 		#services {
 			grid-template-columns: repeat(1, 1fr);
 			padding-left: 8px;
