@@ -14,52 +14,69 @@
 	import Technology from './components/Technology.svelte';
 </script>
 
-<div id="services">
-	<Service name="Android Development" logo={Android}>
-		<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
-		<Technology
-			name="Jetpack Compose"
-			logo={JetpackCompose}
-			url="https://developer.android.com/jetpack/compose?gclid=CjwKCAjwzo2mBhAUEiwAf7wjkpF7FMfiIzNyVVjDFQY_ANHfQ4UG26XWC7iAodaLqZCnep724u_Q1xoCRS8QAvD_BwE&gclsrc=aw.ds"
-		/>
-	</Service>
+<div id="content">
+	<h1 id="title">Software development</h1>
 
-	<Service name="iOS" logo={iOSLight} logoDark={iOSDark}>
-		<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
-		<Technology
-			name="Compose Multiplatform"
-			logo={ComposeMultiplatform}
-			url="https://www.jetbrains.com/lp/compose-multiplatform/"
-		/>
-	</Service>
+	<div id="services">
+		<Service name="Android" logo={Android}>
+			<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
+			<Technology
+				name="Jetpack Compose"
+				logo={JetpackCompose}
+				url="https://developer.android.com/jetpack/compose?gclid=CjwKCAjwzo2mBhAUEiwAf7wjkpF7FMfiIzNyVVjDFQY_ANHfQ4UG26XWC7iAodaLqZCnep724u_Q1xoCRS8QAvD_BwE&gclsrc=aw.ds"
+			/>
+		</Service>
 
-	<Service name="Web" logo={Web}>
-		<Technology name="Svelte" logo={Svelte} url="https://svelte.dev/" />
-		<Technology name="TypeScript" logo={TypeScript} url="https://www.typescriptlang.org/" />
-	</Service>
+		<Service name="iOS" logo={iOSLight} logoDark={iOSDark}>
+			<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
+			<Technology
+				name="Compose Multiplatform"
+				logo={ComposeMultiplatform}
+				url="https://www.jetbrains.com/lp/compose-multiplatform/"
+			/>
+		</Service>
 
-	<Service name="Backend">
-		<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
-		<Technology name="Ktor" logo={Ktor} url="https://ktor.io/" />
-	</Service>
+		<Service name="Web" logo={Web}>
+			<Technology name="Svelte" logo={Svelte} url="https://svelte.dev/" />
+			<Technology name="TypeScript" logo={TypeScript} url="https://www.typescriptlang.org/" />
+		</Service>
 
-	<Service name="Desktop">
-		<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
-		<Technology
-			name="Compose Multiplatform"
-			logo={ComposeMultiplatform}
-			url="https://www.jetbrains.com/lp/compose-multiplatform/"
-		/>
-	</Service>
+		<Service name="Backend">
+			<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
+			<Technology name="Ktor" logo={Ktor} url="https://ktor.io/" />
+		</Service>
 
-	<Service name="Something else?">
-		<p>Ask us. We'll let you know if we can build it.</p>
-		<SecondaryButton href="/contact" label="Contact us" />
-	</Service>
+		<Service name="Desktop">
+			<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
+			<Technology
+				name="Compose Multiplatform"
+				logo={ComposeMultiplatform}
+				url="https://www.jetbrains.com/lp/compose-multiplatform/"
+			/>
+		</Service>
+
+		<Service name="Something else?" hasTeckstack={false}>
+			<p>Ask us. We'll let you know if we can build it.</p>
+			<SecondaryButton href="/contact" label="Contact us" />
+		</Service>
+	</div>
 </div>
 
 <style>
+	#content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#title {
+		font-size: var(--l);
+		line-height: var(--l);
+	}
+
 	#services {
 		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 16px;
 	}
 </style>

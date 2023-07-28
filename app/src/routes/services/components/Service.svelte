@@ -2,6 +2,7 @@
 	export let name: string;
 	export let logo: string | null = null;
 	export let logoDark: string | null = null;
+	export let hasTeckstack: boolean = true;
 
 	import { ds } from '$lib/design-system';
 
@@ -21,14 +22,22 @@
 		{/if}
 		<h2>{name}</h2>
 	</div>
-	<h4>Tech stack</h4>
-	<slot id="tech" />
+	{#if hasTeckstack}
+		<h4>Tech stack</h4>
+	{/if}
+	<slot />
 </div>
 
 <style>
 	#service {
 		display: flex;
 		flex-direction: column;
+	}
+
+	#header {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
 	}
 
 	.logo {
@@ -43,8 +52,5 @@
 	h4 {
 		font-size: var(--s);
 		font-weight: bold;
-	}
-
-	#tech {
 	}
 </style>
