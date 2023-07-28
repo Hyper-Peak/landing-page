@@ -20,7 +20,6 @@
 
 <style>
 	:global(body) {
-		background-color: var(--bg);
 		margin: 0;
 		padding: 0;
 	}
