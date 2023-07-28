@@ -9,8 +9,8 @@
 	import Svelte from '$lib/assets/technologies/svelte-logo.svg';
 	import TypeScript from '$lib/assets/technologies/typescript-logo.svg';
 	import Web from '$lib/assets/technologies/web.svg';
-	import TextButton from '$lib/components/TextButton.svelte';
 	import Service from './components/Service.svelte';
+	import SomethingElse from './components/SomethingElse.svelte';
 	import Technology from './components/Technology.svelte';
 </script>
 
@@ -28,7 +28,11 @@
 		</Service>
 
 		<Service name="iOS" logo={iOSLight} logoDark={iOSDark}>
-			<Technology name="Kotlin Multiplatform" logo={Kotlin} url="https://kotlinlang.org/" />
+			<Technology
+				name="Kotlin Multiplatform"
+				logo={Kotlin}
+				url="https://kotlinlang.org/docs/multiplatform.html"
+			/>
 			<Technology
 				name="Compose Multiplatform"
 				logo={ComposeMultiplatform}
@@ -47,7 +51,11 @@
 		</Service>
 
 		<Service name="Desktop">
-			<Technology name="Kotlin Multiplatform" logo={Kotlin} url="https://kotlinlang.org/" />
+			<Technology
+				name="Kotlin Multiplatform"
+				logo={Kotlin}
+				url="https://kotlinlang.org/docs/multiplatform.html"
+			/>
 			<Technology
 				name="Compose Multiplatform"
 				logo={ComposeMultiplatform}
@@ -55,10 +63,7 @@
 			/>
 		</Service>
 
-		<Service name="Something else?" hasTeckstack={false}>
-			<p id="other-p">Ask us. We'll let you know if we can build it.</p>
-			<TextButton href="/contact" label="Contact us" />
-		</Service>
+		<SomethingElse />
 	</div>
 </div>
 
@@ -89,9 +94,5 @@
 			padding-left: 8px;
 			padding-right: 8px;
 		}
-	}
-
-	#other-p {
-		font-size: var(--s);
 	}
 </style>

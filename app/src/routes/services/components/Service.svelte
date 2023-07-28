@@ -2,7 +2,6 @@
 	export let name: string;
 	export let logo: string | null = null;
 	export let logoDark: string | null = null;
-	export let hasTeckstack: boolean = true;
 
 	import { ds } from '$lib/design-system';
 
@@ -22,9 +21,7 @@
 		{/if}
 		<h2>{name}</h2>
 	</div>
-	{#if hasTeckstack}
-		<h4>Tech stack</h4>
-	{/if}
+	<h4>Tech stack</h4>
 	<slot />
 </div>
 
