@@ -1,2 +1,5 @@
-<h1>Projects</h1>
-<h2>WIP...</h2>
+<script lang="ts">
+	import UnderConstruction from '$lib/components/UnderConstruction.svelte';
+</script>
+
+<UnderConstruction name="Projects" />
