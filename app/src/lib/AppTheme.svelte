@@ -38,19 +38,19 @@
 		padding-top: 8px;
 	}
 
-	:global(h1, h2, h3, h4, p, a, a:link, a:visited, li) {
+	:global(h1, h2, h3, h4, h5, h6, p, a, a:link, a:visited, li) {
 		color: var(--onBg);
 		transition: color 0.3s ease;
 		margin: 0px;
 		padding: 0px;
 	}
 
-	:global(h1, h2, h3) {
+	:global(h1, h2) {
 		font-family: 'Nunito Sans', sans-serif;
 		font-weight: 700;
 	}
 
-	:global(p, h3, h4, a, a:link, a:visited, li) {
+	:global(p, h3, h4, h5, h6, a, a:link, a:visited, li) {
 		font-family: 'Roboto', sans-serif;
 	}
 
