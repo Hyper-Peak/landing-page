@@ -8,14 +8,14 @@
 
 <style>
 	#btn-primary {
-		display: inline-block;
 		background-color: var(--primary);
 		color: var(--white);
 		text-decoration: none;
 		font-size: var(--m);
 		font-weight: normal;
-		padding: 12px 32px;
-		border-radius: 32px;
+		/* 14px vertical so it has the same size as `SecondaryButton`: 12px + 2px for the border */
+		padding: 14px 32px;
+		border-radius: 36px;
 		transition: color background-color 0.3s ease;
 	}
 

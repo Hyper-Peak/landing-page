@@ -16,7 +16,7 @@
 		font-size: var(--m);
 		font-weight: normal;
 		padding: 12px 32px;
-		border-radius: 32px;
+		border-radius: 36px;
 		transition: color background-color 0.3s ease;
 	}
 

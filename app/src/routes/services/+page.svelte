@@ -150,7 +150,7 @@
 		display: flex;
 		flex-direction: row;
 		gap: 12px;
-		justify-content: center;
+		align-items: baseline;
 		flex-wrap: wrap;
 		padding-left: 8px;
 		padding-right: 8px;
