@@ -15,7 +15,7 @@
 	}
 </script>
 
-<a href={url}>
+<a href={url} target="_blank">
 	<img src={logoSrc} alt={name} />
 	<span>{name}</span>
 </a>
@@ -27,6 +27,9 @@
 		text-decoration: none;
 		align-items: center;
 		gap: 8px;
+	}
+
+	span {
 		font-size: var(--m);
 	}
 
