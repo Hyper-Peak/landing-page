@@ -17,11 +17,11 @@
 <div id="service">
 	<div id="header">
 		{#if logoSrc != null}
-			<img src={logoSrc} alt={name} />
+			<img src={logoSrc} alt={name} class="logo" />
 		{/if}
 		<h2>{name}</h2>
 	</div>
-	<h4>Technologies</h4>
+	<h4>Tech stack</h4>
 	<slot id="tech" />
 </div>
 
@@ -31,12 +31,17 @@
 		flex-direction: column;
 	}
 
+	/* .logo {
+		width: 24px;
+		height: 24px;
+	} */
+
 	h2 {
 		font-size: var(--l);
 	}
 
 	h4 {
-		font-size: var(--m);
+		font-size: var(--s);
 		font-weight: bold;
 	}
 

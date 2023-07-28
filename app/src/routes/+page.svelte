@@ -40,7 +40,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		height: 40%;
+		height: 40vh;
 		padding-bottom: 24px;
 	}
 
@@ -61,12 +61,11 @@
 	#tldr {
 		display: flex;
 		padding-top: 32px;
-		padding-bottom: 64px;
 		flex-direction: column;
 		align-items: center;
 		border-radius: 32px 32px 0px 0px;
 		background-color: var(--bg2);
-		height: 50%;
+		height: 60vh;
 		width: 100%;
 		flex-grow: 1;
 

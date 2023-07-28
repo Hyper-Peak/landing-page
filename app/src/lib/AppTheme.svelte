@@ -26,7 +26,7 @@
 
 	#root {
 		min-width: 100vw;
-		height: 100vh;
+		min-height: 100vh;
 		margin: 0px;
 		padding: 0px;
 		background-color: var(--bg);
