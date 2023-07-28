@@ -151,6 +151,7 @@
 		flex-direction: row;
 		gap: 12px;
 		align-items: baseline;
+		justify-content: center;
 		flex-wrap: wrap;
 		padding-left: 8px;
 		padding-right: 8px;
