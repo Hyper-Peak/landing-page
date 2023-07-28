@@ -28,7 +28,7 @@
 		</Service>
 
 		<Service name="iOS" logo={iOSLight} logoDark={iOSDark}>
-			<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
+			<Technology name="Kotlin Multiplatform" logo={Kotlin} url="https://kotlinlang.org/" />
 			<Technology
 				name="Compose Multiplatform"
 				logo={ComposeMultiplatform}
@@ -47,7 +47,7 @@
 		</Service>
 
 		<Service name="Desktop">
-			<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
+			<Technology name="Kotlin Multiplatform" logo={Kotlin} url="https://kotlinlang.org/" />
 			<Technology
 				name="Compose Multiplatform"
 				logo={ComposeMultiplatform}
@@ -56,8 +56,10 @@
 		</Service>
 
 		<Service name="Something else?" hasTeckstack={false}>
-			<p>Ask us. We'll let you know if we can build it.</p>
-			<SecondaryButton href="/contact" label="Contact us" />
+			<div>
+				<p>Ask us. We'll let you know if we can build it.</p>
+				<SecondaryButton href="/contact" label="Contact us" />
+			</div>
 		</Service>
 	</div>
 </div>
@@ -78,5 +80,12 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 16px;
+		grid-auto-flow: row;
+	}
+
+	@media (max-width: 600px) {
+		#services {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 </style>
