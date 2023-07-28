@@ -141,4 +141,14 @@
 	:global(.mt64) {
 		margin-top: 64px !important;
 	}
+
+	:global(.highlight) {
+		color: var(--secondary) !important;
+		font-weight: bold !important;
+		text-decoration: none !important;
+	}
+
+	:global(.highlight:hover) {
+		color: var(--primary) !important;
+	}
 </style>

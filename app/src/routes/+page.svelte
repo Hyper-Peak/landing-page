@@ -92,16 +92,6 @@
 		margin-top: 16px;
 	}
 
-	.highlight {
-		color: var(--secondary);
-		font-weight: bold;
-		text-decoration: none;
-	}
-
-	.highlight:hover {
-		color: var(--primary);
-	}
-
 	p {
 		text-align: center;
 		margin-left: 8px;

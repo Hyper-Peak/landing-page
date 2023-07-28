@@ -7,7 +7,7 @@
 <div id="content" class="mt48">
 	<h2 id="title">🚧 {name} 🚧</h2>
 	<h1 id="constr" class="mt4"><i>Under construction...</i></h1>
-	<PrimaryButton href="/" label="Go back home" />
+	<PrimaryButton href="/" label="Back to Home" />
 </div>
 
 <style>

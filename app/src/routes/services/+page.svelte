@@ -71,18 +71,18 @@
 	<h2 class="mt24">Why Kotlin & Svelte?</h2>
 	<p class="mt8">
 		We use modern technologies with elegant software design.<br />
-		This allows us to craft simple and peak performance software.<br />
-		For example, like this website and our other app in
+		This allows us to craft simple and peak performance solutions.<br />
+		For example, like this website and our other apps in
 		<a href="/projects" class="highlight">projects</a>.
 	</p>
 
-	<h2 class="mt24">What next?</h2>
+	<h2 class="mt32">What next?</h2>
 	<p class="mt8">
-		You can check our projects and see if we're good enough.<br />
-		Or see how we work and get a quote for your project.
+		You can check our projects and see if HyperPeak is good enough for you.<br/>
+		Or directly go to pricing and <a href="/contact" class="highlight">get a quote</a> for your project.
 	</p>
 
-	<div class="ctas-row mt12">
+	<div class="ctas-row mt16">
 		<PrimaryButton href="/pricing" label="Let's work!" />
 		<SecondaryButton href="/projects" label="Our projects" />
 	</div>
@@ -144,12 +144,6 @@
 			padding-left: 8px;
 			padding-right: 8px;
 		}
-	}
-
-	.highlight {
-		color: var(--secondary);
-		font-weight: bold;
-		text-decoration: none;
 	}
 
 	.ctas-row {
