@@ -17,7 +17,7 @@
 <div id="content">
 	<h1 id="title">Software development</h1>
 
-	<div id="services" class="mt16">
+	<div id="services" class="mt24">
 		<Service name="Android" logo={Android}>
 			<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
 			<Technology

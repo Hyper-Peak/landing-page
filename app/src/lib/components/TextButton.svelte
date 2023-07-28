@@ -18,6 +18,6 @@
 	}
 
 	#btn:hover {
-		color: var(--onBg);
+		color: var(--primary);
 	}
 </style>
