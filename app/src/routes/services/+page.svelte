@@ -77,6 +77,9 @@
 	#title {
 		font-size: var(--xl);
 		line-height: var(--xl);
+		padding-left: 8px;
+		padding-right: 8px;
+		text-align: center;
 	}
 
 	#services {
@@ -91,6 +94,14 @@
 	@media (max-width: 600px) {
 		#services {
 			grid-template-columns: repeat(2, 1fr);
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+	}
+
+	@media (max-width: 420px) {
+		#services {
+			grid-template-columns: repeat(1, 1fr);
 			padding-left: 8px;
 			padding-right: 8px;
 		}
