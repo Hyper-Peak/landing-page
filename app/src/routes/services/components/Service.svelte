@@ -31,18 +31,28 @@
 <style>
 	#service {
 		display: flex;
+		padding: 16px;
+		border-radius: 16px;
+		border-color: var(--gray);
+		border-width: 1px;
+		border-style: solid;
 		flex-direction: column;
+		justify-items: center;
+		align-items: start;
+		align-content: center;
+		gap: 8px;
 	}
 
 	#header {
 		display: flex;
 		flex-direction: row;
-		align-items: baseline;
+		align-items: center;
 	}
 
 	.logo {
 		width: 24px;
 		height: 24px;
+		margin-right: 8px;
 	}
 
 	h2 {

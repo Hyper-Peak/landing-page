@@ -8,7 +8,6 @@
 
 <style>
 	#btn-secondary {
-		display: inline-block;
 		border-color: var(--secondary);
 		border-width: 2px;
 		border-style: solid;

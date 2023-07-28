@@ -9,7 +9,7 @@
 	import Svelte from '$lib/assets/technologies/svelte-logo.svg';
 	import TypeScript from '$lib/assets/technologies/typescript-logo.svg';
 	import Web from '$lib/assets/technologies/web.svg';
-	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
+	import TextButton from '$lib/components/TextButton.svelte';
 	import Service from './components/Service.svelte';
 	import Technology from './components/Technology.svelte';
 </script>
@@ -17,7 +17,7 @@
 <div id="content">
 	<h1 id="title">Software development</h1>
 
-	<div id="services">
+	<div id="services" class="mt16">
 		<Service name="Android" logo={Android}>
 			<Technology name="Kotlin" logo={Kotlin} url="https://kotlinlang.org/" />
 			<Technology
@@ -56,10 +56,8 @@
 		</Service>
 
 		<Service name="Something else?" hasTeckstack={false}>
-			<div>
-				<p>Ask us. We'll let you know if we can build it.</p>
-				<SecondaryButton href="/contact" label="Contact us" />
-			</div>
+			<p id="other-p">Ask us. We'll let you know if we can build it.</p>
+			<TextButton href="/contact" label="Contact us" />
 		</Service>
 	</div>
 </div>
@@ -72,8 +70,8 @@
 	}
 
 	#title {
-		font-size: var(--l);
-		line-height: var(--l);
+		font-size: var(--xl);
+		line-height: var(--xl);
 	}
 
 	#services {
@@ -81,11 +79,19 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 16px;
 		grid-auto-flow: row;
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 
 	@media (max-width: 600px) {
 		#services {
 			grid-template-columns: repeat(2, 1fr);
+			padding-left: 8px;
+			padding-right: 8px;
 		}
+	}
+
+	#other-p {
+		font-size: var(--s);
 	}
 </style>
