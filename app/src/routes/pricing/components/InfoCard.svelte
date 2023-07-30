@@ -1,4 +1,32 @@
 <script lang="ts">
-
+	export let title: string;
+	export let marginTop: number = 12;
 </script>
 
+<div id="card" style="margin-top: {marginTop}px;">
+	<h3>{title}</h3>
+	<p class="mt12"><slot /></p>
+</div>
+
+<style>
+	#card {
+		display: flex;
+		flex-direction: column;
+		width: 640px;
+		margin-left: 8px;
+		margin-right: 8px;
+		padding: 24px;
+		border-radius: 32px;
+		background-color: var(--bg2);
+	}
+
+	h3 {
+		font-size: var(--l);
+		color: var(--onBg);
+	}
+
+	p {
+		font-size: var(--m);
+		color: var(--onBg);
+	}
+</style>

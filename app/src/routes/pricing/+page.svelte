@@ -1,13 +1,41 @@
 <script lang="ts">
-	import UnderConstruction from '$lib/components/UnderConstruction.svelte';
+	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
+import UnderConstruction from '$lib/components/UnderConstruction.svelte';
+	import InfoCard from './components/InfoCard.svelte';
 </script>
 
 <div id="content">
-	<h1>Fixed per project</h1>
-	<p>We charge only for what we've delivered. Ofcourse, after you explicitly approve it. ✅</p>
+	<h1 class="mt24">Fixed per project</h1>
+	<p class="mt12">We charge only for what we've delivered and only after you've explicitly approved it.</p>
+
+	<InfoCard title="Project" marginTop={24}>
+		Lorem ipsum
+	</InfoCard>
+
+	<InfoCard title="Milestone">
+		Lorem ipsum
+	</InfoCard>
+
+	<InfoCard title="Sprint">
+		Lorem ipsum
+	</InfoCard>
+
+	<InfoCard title="Changes">
+		Lorem ipsum
+	</InfoCard>
+
+	<InfoCard title="Non-binding">
+		Lorem ipsum
+	</InfoCard>
+
+	<InfoCard title="Maintenance">
+		Lorem ipsum
+	</InfoCard>
+
+	<PrimaryButton href="/contact" marginTop={24}>Contact us</PrimaryButton>
 </div>
 
-<UnderConstruction name="Pricing"/>
+<UnderConstruction name="Pricing" />
 
 <style>
 	#content {
@@ -15,5 +43,18 @@
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 48px;
+	}
+
+	h1 {
+		font-size: var(--xl);
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	p {
+		font-size: var(--m);
+		color: var(--secondary);
+		padding-left: 8px;
+		padding-right: 8px;
 	}
 </style>
