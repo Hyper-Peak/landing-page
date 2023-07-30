@@ -68,7 +68,7 @@
 			change must be either approved by us or renegotiated.
 		</InfoText>
 
-		<PricingTip color={colors.secondary}>
+		<PricingTip color={colors.gray}>
 			If the change doesn't affect much our timeline we'll try to do it for free. <i
 				>(no promises!)</i
 			>
