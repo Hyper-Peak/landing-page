@@ -2,6 +2,8 @@
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
 import UnderConstruction from '$lib/components/UnderConstruction.svelte';
 	import InfoCard from './components/InfoCard.svelte';
+	import InfoText from './components/InfoText.svelte';
+	import PricingTip from './components/PricingTip.svelte';
 </script>
 
 <div id="content">
@@ -10,7 +12,9 @@ import UnderConstruction from '$lib/components/UnderConstruction.svelte';
 		and only after you've explicitly approved it.</p>
 
 	<InfoCard title="Project" marginTop={24}>
-		Lorem ipsum
+		<InfoText>A software product with clear vision and expectations.
+		The minimum price for a project is EUR 2,000 VAT.</InfoText>
+		<PricingTip>It's key to trust each other and be on the </PricingTip>
 	</InfoCard>
 
 	<InfoCard title="Milestone">

@@ -5,7 +5,7 @@
 
 <div id="card" style="margin-top: {marginTop}px;">
 	<h3>{title}</h3>
-	<p class="mt12"><slot /></p>
+	<slot />
 </div>
 
 <style>
@@ -21,11 +21,6 @@
 
 	h3 {
 		font-size: var(--l);
-		color: var(--onBg);
-	}
-
-	p {
-		font-size: var(--m);
-		color: var(--onBg);
+		color: var(--primary);
 	}
 </style>
