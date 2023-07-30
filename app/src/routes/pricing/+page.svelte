@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { globalColors } from '$lib/colors';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
 	import UnderConstruction from '$lib/components/UnderConstruction.svelte';
 	import { ds } from '$lib/design-system';
@@ -6,54 +7,62 @@
 	import InfoText from './components/InfoText.svelte';
 	import PricingTip from './components/PricingTip.svelte';
 
-	$: colors = $ds.colors
+	$: colors = $ds.colors;
 </script>
 
 <div id="content">
 	<h1 class="mt24">Fixed per project</h1>
 	<p class="mt12">
-		We charge only for what we've delivered<br />
-		and only after you've explicitly approved it.
+		<i
+			>We charge a fixed price per project.<br />
+			You pay only for the results that you approve.</i
+		>
 	</p>
 
 	<InfoCard title="Project" marginTop={24}>
 		<InfoText>
-			A software project with clear vision and expectations. 
-			The total price is fixed and determined based on the scope of the work.
+			A software project with clear vision and expectations. You must know what you need so we can
+			give you a quote.
 		</InfoText>
 		<PricingTip color={colors.gray}>
 			The minimum price for a project is EUR 2,000 with VAT.
 		</PricingTip>
 	</InfoCard>
 
-	<InfoCard title="Milestone">
+	<InfoCard title="Milestones">
 		<InfoText>
-			We divide the project into multiple smaller pieces that we can deliver and demo. Our goal is
-			to complete a milestone every 1-2 weeks.
+			We divide the project into multiple smaller pieces that we can deliver and demo - milestones.
+			Each milestone must have a fixed scope and price.
 		</InfoText>
-		<PricingTip color={colors.primary}>
-			Before starting, we must agree on the milestones and their price.
-		</PricingTip>
-
-		<PricingTip color={colors.primary}>
-			∑ of each milestone cost = project price
-		</PricingTip>
+		<PricingTip color={colors.secondary}>Our goal complete a milestone every 1-2 weeks.</PricingTip>
 	</InfoCard>
 
 	<InfoCard title="Client approval & payments">
 		<InfoText>
-			After we deliver a milestone you'll have to test and review it.
-			If you're happy with the result you can pay the milesone and
-			we'll continue developing the next milestone.
+			When we complete a milestone, we'll deliver a demo product that you'll have to test and
+			review. If you're happy with the result, you can approve the milestone and pay it. After
+			payment we'll continue developing the next milestone.
 		</InfoText>
 
-		<PricingTip negative={true}>
-			If you don't like the result, you can either request changes
-			or 
+		<PricingTip color={colors.secondary}>
+			[APPROVE] You pay us and we continue with the next milestone.
+		</PricingTip>
+
+		<PricingTip color={colors.gray}>
+			[REQUEST CHANGES] Ofc, you can provide feedback
+			and request small changes. We'll let you know if we can do them.
+		</PricingTip>
+
+		<PricingTip color={globalColors.red}>
+			[REJECT] If you're not satisfied with the results, 
+			you can simply not pay and stop working with us.
+			No hard feelings, no explanation needed.
 		</PricingTip>
 	</InfoCard>
 
-	<InfoCard title="Changes">Lorem ipsum</InfoCard>
+	<InfoCard title="Scope changes">Lorem ipsum</InfoCard>
+
+	<InfoCard title="Timeline & deadlines">gdf</InfoCard>
 
 	<InfoCard title="Non-binding">Lorem ipsum</InfoCard>
 
@@ -82,7 +91,7 @@
 
 	p {
 		font-size: var(--m);
-		color: var(--secondary);
+		color: var(--onBg);
 		text-align: center;
 	}
 </style>
