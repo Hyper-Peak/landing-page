@@ -9,6 +9,7 @@
 	import Svelte from '$lib/assets/technologies/svelte-logo.svg';
 	import TypeScript from '$lib/assets/technologies/typescript-logo.svg';
 	import Web from '$lib/assets/technologies/web.svg';
+	import CtasRow from '$lib/components/CtasRow.svelte';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
 	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
 	import Service from './components/ServiceCard.svelte';
@@ -82,10 +83,10 @@
 		Otherwise, you can directly contact us and <a href="/contact" class="highlight">get a quote</a>.
 	</p>
 
-	<div class="ctas-row mt16">
+	<CtasRow marginTop={16}>
 		<PrimaryButton href="/pricing" label="Pricing" />
 		<SecondaryButton href="/projects" label="Our projects" />
-	</div>
+	</CtasRow>
 </div>
 
 <style>
@@ -144,16 +145,5 @@
 			padding-left: 8px;
 			padding-right: 8px;
 		}
-	}
-
-	.ctas-row {
-		display: flex;
-		flex-direction: row;
-		gap: 12px;
-		align-items: baseline;
-		justify-content: center;
-		flex-wrap: wrap;
-		padding-left: 8px;
-		padding-right: 8px;
 	}
 </style>

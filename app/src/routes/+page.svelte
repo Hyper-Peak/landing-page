@@ -1,6 +1,8 @@
 <script lang="ts">
+	import SecondaryButton from './../lib/components/SecondaryButton.svelte';
+	import CtasRow from '$lib/components/CtasRow.svelte';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
-	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
+	import TextButton from '$lib/components/TextButton.svelte';
 </script>
 
 <div id="main">
@@ -25,7 +27,8 @@
 		<li>We'll deliver the product on weekly milestones. 🎯</li>
 		<li>Only pay for the milestones you approve. ✅</li>
 	</ol>
-	<SecondaryButton href="/contact" label="Contact us" marginTop={24} />
+
+	<SecondaryButton href="/pricing" label="Pricing" marginTop={24}/>
 </div>
 
 <style>
