@@ -1,12 +1,12 @@
 <script lang="ts">
-	import TextButton from '$lib/components/TextButton.svelte';
+	import TextButtonSecondary from '$lib/components/TextButtonSecondary.svelte';
 </script>
 
 <div id="other">
     <h2>Something else?</h2>
     <div id="content">
         <p id="other-p">Ask us. We may be able to build it.</p>
-        <TextButton href="/contact" label="Contact us" />
+        <TextButtonSecondary href="/contact">Contact us</TextButtonSecondary>
     </div>
 </div>
 

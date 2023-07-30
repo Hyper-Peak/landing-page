@@ -1,10 +1,12 @@
 <script lang="ts">
-	export let marginTop: number = 0;
 	export let href: string;
-	export let label: string;
+	export let marginTop: number = 0;
+	export let paddingHorizontal: number = 0;
 </script>
 
-<a {href} id="btn" style="margin-top: {marginTop}px">{label}</a>
+<a {href} id="btn" style="margin-top: {marginTop}px;--paddingHor: {paddingHorizontal}px;">
+	<slot />
+</a>
 
 <style>
 	#btn {
@@ -13,7 +15,7 @@
 		text-decoration: none;
 		font-size: var(--m);
 		font-weight: normal;
-		padding: 8px 0px;
+		padding: 8px var(--paddingHor);
 		transition: color background-color 0.3s ease;
 	}
 

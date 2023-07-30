@@ -85,8 +85,8 @@
 	</p>
 
 	<CtasRow marginTop={16}>
-		<PrimaryButton href="/pricing" label="Pricing" />
-		<SecondaryButton href="/projects" label="Our projects" />
+		<PrimaryButton href="/pricing">Pricing</PrimaryButton>
+		<SecondaryButton href="/projects">Our projects</SecondaryButton>
 	</CtasRow>
 </div>
 

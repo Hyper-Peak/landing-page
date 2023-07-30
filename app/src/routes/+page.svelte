@@ -1,6 +1,9 @@
 <script lang="ts">
+	import CtasRow from '$lib/components/CtasRow.svelte';
 	import Highlight from '$lib/components/Highlight.svelte';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
+	import TextButtonPrimary from '$lib/components/TextButtonPrimary.svelte';
+	import TextButton from '$lib/components/TextButtonSecondary.svelte';
 	import SecondaryButton from './../lib/components/SecondaryButton.svelte';
 </script>
 
@@ -12,7 +15,7 @@
 		We can <Highlight href="/services">build</Highlight> your product on
 		<Highlight href="/services">all platforms.</Highlight>
 	</p>
-	<PrimaryButton href="/services" label="Our services" marginTop={24} />
+	<PrimaryButton href="/services" marginTop={24}>Our services</PrimaryButton>
 </div>
 
 <hr class="divider" />
@@ -26,8 +29,10 @@
 		<li>We'll deliver the product on weekly milestones. 🎯</li>
 		<li>Only pay for the milestones you approve. ✅</li>
 	</ol>
-
-	<SecondaryButton href="/pricing" label="Pricing" marginTop={24} />
+	<CtasRow marginTop={24} gap={12}>
+		<SecondaryButton href="/pricing">Pricing</SecondaryButton>
+		<TextButtonPrimary href="/contact">Contact us</TextButtonPrimary>
+	</CtasRow>
 </div>
 
 <style>

@@ -1,10 +1,11 @@
 <script lang="ts">
-	export let marginTop: number = 0;
 	export let href: string;
-	export let label: string;
+	export let marginTop: number = 0;
 </script>
 
-<a {href} id="btn-secondary" style="margin-top: {marginTop}px">{label}</a>
+<a {href} id="btn-secondary" style="margin-top: {marginTop}px">
+	<slot />
+</a>
 
 <style>
 	#btn-secondary {

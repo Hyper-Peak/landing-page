@@ -1,10 +1,11 @@
 <script lang="ts">
-	export let marginTop: number = 0;
 	export let href: string;
-	export let label: string;
+	export let marginTop: number = 0;
 </script>
 
-<a {href} id="btn-primary" style="margin-top: {marginTop}px">{label}</a>
+<a {href} id="btn-primary" style="margin-top: {marginTop}px">
+	<slot />
+</a>
 
 <style>
 	#btn-primary {
@@ -20,7 +21,7 @@
 	}
 
 	#btn-primary:hover {
-		background-color: #62ABF5;
+		background-color: #62abf5;
 		color: var(--black);
 	}
 </style>
