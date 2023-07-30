@@ -78,12 +78,12 @@
 
 	<h2 class="mt32">What next?</h2>
 	<p class="mt8">
-		You can check our projects and see if HyperPeak is a good pick for you.<br/>
+		You can check our projects and see if HyperPeak is a good pick for you.<br />
 		Otherwise, you can directly contact us and <a href="/contact" class="highlight">get a quote</a>.
 	</p>
 
 	<div class="ctas-row mt16">
-		<PrimaryButton href="/pricing" label="Let's work!" />
+		<PrimaryButton href="/pricing" label="Pricing" />
 		<SecondaryButton href="/projects" label="Our projects" />
 	</div>
 </div>
