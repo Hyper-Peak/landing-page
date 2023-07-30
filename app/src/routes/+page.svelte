@@ -1,8 +1,7 @@
 <script lang="ts">
-	import SecondaryButton from './../lib/components/SecondaryButton.svelte';
-	import CtasRow from '$lib/components/CtasRow.svelte';
+	import Highlight from '$lib/components/Highlight.svelte';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
-	import TextButton from '$lib/components/TextButton.svelte';
+	import SecondaryButton from './../lib/components/SecondaryButton.svelte';
 </script>
 
 <div id="main">
@@ -10,8 +9,8 @@
 
 	<p class="l mt32">A software service company.</p>
 	<p class="l mt16">
-		We can <a href="/services" class="highlight">build</a> your product on
-		<a href="/services" class="highlight">all platforms.</a>
+		We can <Highlight href="/services">build</Highlight> your product on
+		<Highlight href="/services">all platforms.</Highlight>
 	</p>
 	<PrimaryButton href="/services" label="Our services" marginTop={24} />
 </div>
@@ -28,7 +27,7 @@
 		<li>Only pay for the milestones you approve. ✅</li>
 	</ol>
 
-	<SecondaryButton href="/pricing" label="Pricing" marginTop={24}/>
+	<SecondaryButton href="/pricing" label="Pricing" marginTop={24} />
 </div>
 
 <style>

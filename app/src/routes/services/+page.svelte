@@ -10,6 +10,7 @@
 	import TypeScript from '$lib/assets/technologies/typescript-logo.svg';
 	import Web from '$lib/assets/technologies/web.svg';
 	import CtasRow from '$lib/components/CtasRow.svelte';
+	import Highlight from '$lib/components/Highlight.svelte';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
 	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
 	import Service from './components/ServiceCard.svelte';
@@ -74,13 +75,13 @@
 		We use modern technologies with elegant software design.<br />
 		This allows us to craft simple and peak performance products.<br />
 		For example, like this website and our other apps in
-		<a href="/projects" class="highlight">projects</a>.
+		<Highlight href="/projects">projects</Highlight>.
 	</p>
 
 	<h2 class="mt32">What next?</h2>
 	<p class="mt8">
 		You can check our projects and see if HyperPeak is a good pick for you.<br />
-		Otherwise, you can directly contact us and <a href="/contact" class="highlight">get a quote</a>.
+		Otherwise, you can directly contact us and <Highlight href="/contact">get a quote</Highlight>.
 	</p>
 
 	<CtasRow marginTop={16}>
