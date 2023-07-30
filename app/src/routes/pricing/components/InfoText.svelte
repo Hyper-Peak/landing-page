@@ -1,4 +1,4 @@
-<p class="mt12">
+<p>
     <slot/>
 </p>
 
@@ -6,5 +6,7 @@
     p {
 		font-size: var(--m);
 		color: var(--onBg);
+        padding-top: 12px;
+        padding-bottom: 8px;
 	}
 </style>
