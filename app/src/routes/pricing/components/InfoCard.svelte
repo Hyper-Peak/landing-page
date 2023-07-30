@@ -12,9 +12,8 @@
 	#card {
 		display: flex;
 		flex-direction: column;
-		width: 640px;
-		margin-left: 8px;
-		margin-right: 8px;
+		width: min(90%, 620px);
+		box-sizing: border-box;
 		padding: 24px;
 		border-radius: 32px;
 		background-color: var(--bg2);

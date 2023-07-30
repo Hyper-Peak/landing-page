@@ -27,6 +27,7 @@
 	#root {
 		min-width: 100vw;
 		min-height: 100vh;
+		box-sizing: border-box;
 		margin: 0px;
 		padding: 0px;
 		background-color: var(--bg);
