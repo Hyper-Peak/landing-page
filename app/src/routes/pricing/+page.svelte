@@ -15,17 +15,17 @@
 <div id="content">
 	<h1 class="mt8">Fixed per project</h1>
 	<p id="subtitle" class="mt12">
-		<i
-			>We charge a fixed price per project.<br />
-			You pay only for the results that you approve.</i
-		>
+		<i>
+			We charge a fixed price per project.<br />
+			You pay only for the results that you approve.
+		</i>
 	</p>
 
 	<div id="cards-grid" class="mt24">
 		<InfoCard title="1. Project">
 			<InfoText>
 				A software project with clear vision and expectations.<br />
-				You must know what you need so we can give you a quote.
+				You must know what you want before we can give you a quote.
 			</InfoText>
 			<PricingTip color={colors.gray}>
 				The minimum price for a project is EUR 2,000 with VAT.
@@ -34,8 +34,8 @@
 
 		<InfoCard title="2. Milestones">
 			<InfoText>
-				We divide the project into multiple smaller pieces that we can deliver and demo -
-				milestones. Each milestone must have a fixed scope and price.
+				We divide the project into multiple smaller pieces that we can demo. Each milestone must
+				have a fixed scope and pre-negotiated price.
 			</InfoText>
 			<PricingTip color={colors.gray}>Our goal complete a milestone every 1-2 weeks.</PricingTip>
 		</InfoCard>
@@ -90,7 +90,7 @@
 			</InfoText>
 
 			<PricingTip color={colors.gray}>
-				We believe that business relationships should continue only if everyone involved is happy.
+				We believe that business relationships should continue only if mutually beneficial.
 			</PricingTip>
 		</InfoCard>
 
