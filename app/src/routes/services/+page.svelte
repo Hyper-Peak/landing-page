@@ -19,7 +19,7 @@
 </script>
 
 <div id="content">
-	<h1>Software development</h1>
+	<h1 class="mt8">Software development</h1>
 
 	<div id="services" class="mt24">
 		<Service name="Android" logo={Android}>

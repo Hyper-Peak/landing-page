@@ -13,7 +13,7 @@
 </script>
 
 <div id="content">
-	<h1 class="mt24">Fixed per project</h1>
+	<h1 class="mt8">Fixed per project</h1>
 	<p id="subtitle" class="mt12">
 		<i
 			>We charge a fixed price per project.<br />
