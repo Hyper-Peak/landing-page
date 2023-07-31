@@ -37,9 +37,7 @@
 				We divide the project into multiple smaller pieces that we can deliver and demo -
 				milestones. Each milestone must have a fixed scope and price.
 			</InfoText>
-			<PricingTip color={colors.secondary}
-				>Our goal complete a milestone every 1-2 weeks.
-			</PricingTip>
+			<PricingTip color={colors.gray}>Our goal complete a milestone every 1-2 weeks.</PricingTip>
 		</InfoCard>
 
 		<InfoCard title="3. Client approval">
@@ -55,8 +53,7 @@
 			<PricingTip color={colors.gray}>[Request changes] Bugs or small tweaks only.</PricingTip>
 
 			<PricingTip color={globalColors.red}>
-				[Reject] You don't like it. We terminate the project.<br />
-				You owe nothing, no hard feelings.
+				[Reject] We terminate the project. You owe nothing, no hard feelings.
 			</PricingTip>
 		</InfoCard>
 
@@ -67,45 +64,39 @@
 			</InfoText>
 
 			<PricingTip color={colors.secondary}>
-				Tip: To keep development smooth and fast: review and pay milestones swiftly.
+				Tip: To keep development smooth and fast: review and pay milestones fast.
 			</PricingTip>
 
 			<PricingTip color={colors.gray}>
-				There are no refunds for already payed and approved milestones.
+				There are no refunds for already payed milestones.
 			</PricingTip>
 		</InfoCard>
 
 		<InfoCard title="5. Scope changes">
 			<InfoText>
-				We work on a "fixed price per project" model and changes are not included in the price.<br
-				/>
-				Each change must be either approved by us or renegotiated.
-			</InfoText>
-
-			<PricingTip color={colors.secondary}>
-				If the change doesn't affect much our timeline we'll try to do it for free. <i
-					>(no promises!)</i
-				>
-			</PricingTip>
-		</InfoCard>
-
-		<InfoCard title="5. Non-binding">
-			<InfoText>
-				If we're happily working together no one would back out and we might do multiple projects.
-				However, sometimes people or circumstances change... That's why we leave the door for
-				immediate termination by either side open.
+				Changes are not included in the price because we work on a "fixed price" model and they
+				can't be predicted. Each change must be either approved by us or re-negotiated.
 			</InfoText>
 
 			<PricingTip color={colors.gray}>
-				We value freedom. We believe that like in life, business relationships should continue only
-				if they are mutually beneficial. Otherwise, it becomes toxic and no one wins.
+				If the change is small enough we may try to do it for free.
 			</PricingTip>
 		</InfoCard>
 
-		<InfoCard title="6. Maintenance">
+		<InfoCard title="6. Non-binding">
 			<InfoText>
-				Maintenance is not included in the service because it uses a "fixed price" model. It's
-				treated as starting a new project following
+				If things are going smooth, great! We may do multuple projects together. Otherwise, we leave
+				the door for immediate termination by either party open.
+			</InfoText>
+
+			<PricingTip color={colors.gray}>
+				We believe that business relationships should continue only if everyone involved is happy.
+			</PricingTip>
+		</InfoCard>
+
+		<InfoCard title="7. Maintenance">
+			<InfoText>
+				Maintenance is not included in the service. It's treated as starting a new project following
 				<Highlight href="/pricing">the same process</Highlight>.
 			</InfoText>
 		</InfoCard>
@@ -136,8 +127,8 @@
 		grid-gap: 16px;
 		box-sizing: border-box;
 		grid-auto-flow: row;
-		padding-left: 12%;
-		padding-right: 12%;
+		padding-left: 16%;
+		padding-right: 16%;
 	}
 
 	@media (max-width: 600px) {
