@@ -38,31 +38,47 @@
 				milestones. Each milestone must have a fixed scope and price.
 			</InfoText>
 			<PricingTip color={colors.secondary}
-				>Our goal complete a milestone every 1-2 weeks.</PricingTip
-			>
+				>Our goal complete a milestone every 1-2 weeks.
+			</PricingTip>
 		</InfoCard>
 
-		<InfoCard title="3. Client approval & payments">
+		<InfoCard title="3. Client approval">
 			<InfoText>
-				When we complete a milestone, we'll deliver a demo product that you'll have to test and
-				review. If you're happy with the result, you can approve it and pay for the milesone. After
-				the payment is received we'll continue developing the next milestone.
+				When we complete a milestone, we'll deliver a demo product to you. You'll have to test and
+				review it - approve, request changes, reject.
 			</InfoText>
 
-			<PricingTip color={colors.gray}>
-				[REQUESTING CHANGES] You can provide feedback or request small changes. We'll let you know
-				if we can do them.
+			<PricingTip color={colors.secondary}>
+				[Approve] All good, move to the next milestone.
 			</PricingTip>
 
+			<PricingTip color={colors.gray}>[Request changes] Bugs or small tweaks only.</PricingTip>
+
 			<PricingTip color={globalColors.red}>
-				[REJECTING] If you're not satisfied with the results, you can simply not pay and stop
-				working with us. No hard feelings, no explanation needed.
+				[Reject] You don't like it. We terminate the project.<br />
+				You owe nothing, no hard feelings.
 			</PricingTip>
 		</InfoCard>
 
-		<InfoCard title="4. Scope changes">
+		<InfoCard title="4. Payments">
 			<InfoText>
-				We work on a "fixed price per project" model and changes aren't included in the price.<br />
+				You pay only after approving a milestone. We'll continue developing the next milestone only
+				after the payment for the previous one is received.
+			</InfoText>
+
+			<PricingTip color={colors.secondary}>
+				Tip: To keep development smooth and fast: review and pay milestones swiftly.
+			</PricingTip>
+
+			<PricingTip color={colors.gray}>
+				There are no refunds for already payed and approved milestones.
+			</PricingTip>
+		</InfoCard>
+
+		<InfoCard title="5. Scope changes">
+			<InfoText>
+				We work on a "fixed price per project" model and changes are not included in the price.<br
+				/>
 				Each change must be either approved by us or renegotiated.
 			</InfoText>
 
@@ -97,12 +113,6 @@
 
 	<h3 class="mt24">Sounds good?</h3>
 
-	<p id="summary" class="mt12">
-		Or maybe you already have some questions?
-		<br />
-		That's cool. We're flexible!
-	</p>
-
 	<CtasRow marginTop={16}>
 		<PrimaryButton href="/contact">Let's work!</PrimaryButton>
 		<SecondaryButton href="/contact">Let's discuss.</SecondaryButton>
@@ -124,9 +134,10 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 16px;
+		box-sizing: border-box;
 		grid-auto-flow: row;
-		padding-left: 8%;
-		padding-right: 8%;
+		padding-left: 12%;
+		padding-right: 12%;
 	}
 
 	@media (max-width: 600px) {
@@ -152,12 +163,6 @@
 		font-size: var(--l);
 		color: var(--onBg);
 		font-weight: bold;
-		text-align: center;
-	}
-
-	#summary {
-		font-size: var(--m);
-		color: var(--onBg);
 		text-align: center;
 	}
 </style>
