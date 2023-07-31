@@ -127,10 +127,9 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 16px;
-		box-sizing: border-box;
 		grid-auto-flow: row;
-		padding-left: 8%;
-		padding-right: 8%;
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 
 	@media (max-width: 600px) {

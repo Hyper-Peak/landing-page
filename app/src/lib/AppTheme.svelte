@@ -31,7 +31,6 @@
 		margin: 0px;
 		padding: 0px;
 		background-color: var(--bg);
-		box-sizing: border-box;
 		transition: background-color 0.3s ease-in;
 	}
 
