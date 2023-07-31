@@ -4,7 +4,6 @@
 	import Highlight from '$lib/components/Highlight.svelte';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
 	import SecondaryButton from '$lib/components/SecondaryButton.svelte';
-	import UnderConstruction from '$lib/components/UnderConstruction.svelte';
 	import { ds } from '$lib/design-system';
 	import InfoCard from './components/InfoCard.svelte';
 	import InfoText from './components/InfoText.svelte';
@@ -22,74 +21,79 @@
 		>
 	</p>
 
-	<InfoCard title="Project" marginTop={24}>
-		<InfoText>
-			A software project with clear vision and expectations. You must know what you need so we can
-			give you a quote.
-		</InfoText>
-		<PricingTip color={colors.gray}>
-			The minimum price for a project is EUR 2,000 with VAT.
-		</PricingTip>
-	</InfoCard>
+	<div id="cards-grid" class="mt24">
+		<InfoCard title="1. Project">
+			<InfoText>
+				A software project with clear vision and expectations.<br />
+				You must know what you need so we can give you a quote.
+			</InfoText>
+			<PricingTip color={colors.gray}>
+				The minimum price for a project is EUR 2,000 with VAT.
+			</PricingTip>
+		</InfoCard>
 
-	<InfoCard title="Milestones">
-		<InfoText>
-			We divide the project into multiple smaller pieces that we can deliver and demo - milestones.
-			Each milestone must have a fixed scope and price.
-		</InfoText>
-		<PricingTip color={colors.secondary}>Our goal complete a milestone every 1-2 weeks.</PricingTip>
-	</InfoCard>
-
-	<InfoCard title="Client approval & payments">
-		<InfoText>
-			When we complete a milestone, we'll deliver a demo product that you'll have to test and
-			review. If you're happy with the result, you can approve it and pay for the milesone. After
-			the payment is received we'll continue developing the next milestone.
-		</InfoText>
-
-		<PricingTip color={colors.gray}>
-			[REQUESTING CHANGES] You can provide feedback or request small changes. We'll let you know if
-			we can do them.
-		</PricingTip>
-
-		<PricingTip color={globalColors.red}>
-			[REJECTING] If you're not satisfied with the results, you can simply not pay and stop working
-			with us. No hard feelings, no explanation needed.
-		</PricingTip>
-	</InfoCard>
-
-	<InfoCard title="Scope changes">
-		<InfoText>
-			We work on a fixed price per project model and changes aren't included in the price. Each
-			change must be either approved by us or renegotiated.
-		</InfoText>
-
-		<PricingTip color={colors.secondary}>
-			If the change doesn't affect much our timeline we'll try to do it for free. <i
-				>(no promises!)</i
+		<InfoCard title="2. Milestones">
+			<InfoText>
+				We divide the project into multiple smaller pieces that we can deliver and demo -
+				milestones. Each milestone must have a fixed scope and price.
+			</InfoText>
+			<PricingTip color={colors.secondary}
+				>Our goal complete a milestone every 1-2 weeks.</PricingTip
 			>
-		</PricingTip>
-	</InfoCard>
+		</InfoCard>
 
-	<InfoCard title="Non-binding">
-		<InfoText>
-			If we're happily working together no one would back out and we might do multiple projects.
-			However, sometimes people or circumstances change... That's why we leave the door for
-			immediate termination by either side open.
-		</InfoText>
+		<InfoCard title="3. Client approval & payments">
+			<InfoText>
+				When we complete a milestone, we'll deliver a demo product that you'll have to test and
+				review. If you're happy with the result, you can approve it and pay for the milesone. After
+				the payment is received we'll continue developing the next milestone.
+			</InfoText>
 
-		<PricingTip color={colors.gray}>
-			We value freedom. We believe that like in life, business relationships should continue only if
-			they are mutually beneficial. Otherwise, it becomes toxic and no one wins.
-		</PricingTip>
-	</InfoCard>
+			<PricingTip color={colors.gray}>
+				[REQUESTING CHANGES] You can provide feedback or request small changes. We'll let you know
+				if we can do them.
+			</PricingTip>
 
-	<InfoCard title="Maintenance">
-		<InfoText>
-			Maintenance is not included in the service because it uses a "fixed price" model. It's treated
-			as starting a new project following <Highlight href="/pricing">the same process</Highlight>.
-		</InfoText>
-	</InfoCard>
+			<PricingTip color={globalColors.red}>
+				[REJECTING] If you're not satisfied with the results, you can simply not pay and stop
+				working with us. No hard feelings, no explanation needed.
+			</PricingTip>
+		</InfoCard>
+
+		<InfoCard title="4. Scope changes">
+			<InfoText>
+				We work on a "fixed price per project" model and changes aren't included in the price.<br />
+				Each change must be either approved by us or renegotiated.
+			</InfoText>
+
+			<PricingTip color={colors.secondary}>
+				If the change doesn't affect much our timeline we'll try to do it for free. <i
+					>(no promises!)</i
+				>
+			</PricingTip>
+		</InfoCard>
+
+		<InfoCard title="5. Non-binding">
+			<InfoText>
+				If we're happily working together no one would back out and we might do multiple projects.
+				However, sometimes people or circumstances change... That's why we leave the door for
+				immediate termination by either side open.
+			</InfoText>
+
+			<PricingTip color={colors.gray}>
+				We value freedom. We believe that like in life, business relationships should continue only
+				if they are mutually beneficial. Otherwise, it becomes toxic and no one wins.
+			</PricingTip>
+		</InfoCard>
+
+		<InfoCard title="6. Maintenance">
+			<InfoText>
+				Maintenance is not included in the service because it uses a "fixed price" model. It's
+				treated as starting a new project following
+				<Highlight href="/pricing">the same process</Highlight>.
+			</InfoText>
+		</InfoCard>
+	</div>
 
 	<h3 class="mt24">Sounds good?</h3>
 
@@ -114,6 +118,23 @@
 		padding-bottom: 64px;
 		padding-left: 8px;
 		padding-right: 8px;
+	}
+
+	#cards-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 16px;
+		grid-auto-flow: row;
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+
+	@media (max-width: 600px) {
+		#cards-grid {
+			grid-template-columns: repeat(1, 1fr);
+			padding-left: 8px;
+			padding-right: 8px;
+		}
 	}
 
 	h1 {

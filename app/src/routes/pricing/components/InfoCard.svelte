@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let title: string;
-	export let marginTop: number = 12;
+	export let marginTop: number = 0;
 </script>
 
 <div id="card" style="margin-top: {marginTop}px;">
@@ -12,7 +12,6 @@
 	#card {
 		display: flex;
 		flex-direction: column;
-		width: min(90%, 620px);
 		box-sizing: border-box;
 		padding: 24px;
 		border-radius: 32px;
