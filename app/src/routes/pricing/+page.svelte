@@ -24,8 +24,8 @@
 	<div id="cards-grid" class="mt24">
 		<InfoCard title="1. Project">
 			<InfoText>
-				A software project with clear vision and expectations.<br />
-				You must know what you want before we can give you a quote.
+				A software project with clear vision and expectations. You must know what you want before we
+				can give you a quote.
 			</InfoText>
 			<PricingTip color={colors.gray}>
 				The minimum price for a project is EUR 2,000 with VAT.
@@ -37,7 +37,9 @@
 				We divide the project into multiple smaller pieces that we can demo. Each milestone must
 				have a fixed scope and pre-negotiated price.
 			</InfoText>
-			<PricingTip color={colors.gray}>Our goal complete a milestone every 1-2 weeks.</PricingTip>
+			<PricingTip color={colors.gray}>
+				Our goal is to complete a milestone every 1-2 weeks.
+			</PricingTip>
 		</InfoCard>
 
 		<InfoCard title="3. Client approval">
@@ -127,8 +129,8 @@
 		grid-gap: 16px;
 		box-sizing: border-box;
 		grid-auto-flow: row;
-		padding-left: 16%;
-		padding-right: 16%;
+		padding-left: 8%;
+		padding-right: 8%;
 	}
 
 	@media (max-width: 600px) {

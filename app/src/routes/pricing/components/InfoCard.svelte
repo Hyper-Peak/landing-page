@@ -13,6 +13,7 @@
 		display: flex;
 		flex-direction: column;
 		box-sizing: border-box;
+		max-width: 520px;
 		padding: 24px;
 		border-radius: 32px;
 		background-color: var(--bg2);
