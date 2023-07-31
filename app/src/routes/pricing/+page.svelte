@@ -43,21 +43,17 @@
 	<InfoCard title="Client approval & payments">
 		<InfoText>
 			When we complete a milestone, we'll deliver a demo product that you'll have to test and
-			review. If you're happy with the result, you can approve it and pay for the milesone.. After
-			payment we'll continue developing the next milestone.
+			review. If you're happy with the result, you can approve it and pay for the milesone. After
+			the payment is received we'll continue developing the next milestone.
 		</InfoText>
 
-		<PricingTip color={colors.secondary}>
-			[APPROVE] All good! You pay us the milestone and we continue working on the next one.
-		</PricingTip>
-
 		<PricingTip color={colors.gray}>
-			[REQUEST CHANGES] Ofc, you can provide feedback and request small changes. We'll let you know
-			if we can do them.
+			[REQUESTING CHANGES] You can provide feedback or request small changes. We'll let you know if
+			we can do them.
 		</PricingTip>
 
 		<PricingTip color={globalColors.red}>
-			[REJECT] If you're not satisfied with the results, you can simply not pay and stop working
+			[REJECTING] If you're not satisfied with the results, you can simply not pay and stop working
 			with us. No hard feelings, no explanation needed.
 		</PricingTip>
 	</InfoCard>
@@ -69,7 +65,7 @@
 		</InfoText>
 
 		<PricingTip color={colors.secondary}>
-			If the change doesn't affect much our timeline we'll try to do it for free. <i
+			If the change doesn't affect our timeline much we'll try to do it for free. <i
 				>(no promises!)</i
 			>
 		</PricingTip>
@@ -77,21 +73,21 @@
 
 	<InfoCard title="Non-binding">
 		<InfoText>
-			If we're all happy working together no one would back out and we might do multiple projects
-			together. However, sometimes people or circumstances change... We leave the door for immediate
-			termination by either side open.
+			If we're happily working together no one would back out and we might do multiple projects.
+			However, sometimes people or circumstances change... That's why we leave the door for
+			immediate termination by either side open.
 		</InfoText>
 
 		<PricingTip color={colors.gray}>
-			We value freedom and believe that like in life, business relationships should continue only if
+			We value freedom. We believe that like in life, business relationships should continue only if
 			they are mutually beneficial. Otherwise, it becomes toxic and no one wins.
 		</PricingTip>
 	</InfoCard>
 
 	<InfoCard title="Maintenance">
 		<InfoText>
-			Because the model is "fixed price", maintenance isn't included in the service. It's treated as
-			starting a new project following <Highlight href="/pricing">the same process</Highlight>.
+			Maintenance is not included in the service because it uses a "fixed price" model. It's treated
+			as starting a new project following <Highlight href="/pricing">the same process</Highlight>.
 		</InfoText>
 	</InfoCard>
 
@@ -100,7 +96,7 @@
 	<p id="summary" class="mt12">
 		Or maybe you already have some questions?
 		<br />
-		That's cool - we're flexible!
+		That's cool. We're flexible!
 	</p>
 
 	<CtasRow marginTop={16}>
