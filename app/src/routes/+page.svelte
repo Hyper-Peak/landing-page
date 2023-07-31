@@ -3,7 +3,6 @@
 	import Highlight from '$lib/components/Highlight.svelte';
 	import PrimaryButton from '$lib/components/PrimaryButton.svelte';
 	import TextButtonPrimary from '$lib/components/TextButtonPrimary.svelte';
-	import TextButton from '$lib/components/TextButtonSecondary.svelte';
 	import SecondaryButton from './../lib/components/SecondaryButton.svelte';
 </script>
 
