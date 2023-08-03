@@ -12,28 +12,33 @@
 	$: GithubLogo = $ds.isLight ? GithubLogoLight : GithubLogoDark;
 </script>
 
-<div id="dev">
+<div id="dev-card">
 	<div id="identity-col">
-		<img src={profilePic} alt={`${names} software developer`} />
-		<div id="social-media">
-			<a href={linkedInUrl} target="_blank"><img src={LinkedInLogo} alt={`${names} linkedin`} /></a>
-			<a href={githubUrl} target="_blank"><img src={GithubLogo} alt={`${names} github`} /></a>
+		<img id="profile-pic" src={profilePic} alt={`${names} software developer`} />
+		<div id="social-media" class="mt8">
+			<a href={linkedInUrl} target="_blank">
+				<img src={LinkedInLogo} alt={`${names} linkedin`} class="social-icon" />
+			</a>
+			<a href={githubUrl} target="_blank">
+				<img src={GithubLogo} alt={`${names} github`} class="social-icon" />
+			</a>
 		</div>
 	</div>
 	<div id="info-col">
 		<h3>{names}</h3>
-		<slot name="info" />
-		<slot id="badges" name="badges" />
+		<slot />
 	</div>
 </div>
 
 <style>
-	#dev {
+	#dev-card {
+		width: 100%;
+		max-width: 320px;
 		border-radius: 16px;
 		border-style: solid;
 		border-width: 2px;
 		border-color: var(--gray);
-		padding: 16px;
+		padding: 8px;
 		display: flex;
 		flex-direction: row;
 	}
@@ -43,23 +48,35 @@
 		flex-direction: column;
 	}
 
+	h3 {
+		font-size: var(--l);
+	}
+
+	#profile-pic {
+		width: 112px;
+		height: 112px;
+		border-radius: 16px;
+	}
+
 	#social-media {
 		display: flex;
+		padding-left: 8px;
+		align-items: center;
+		gap: 8px;
 		flex-direction: row;
 	}
 
-	img {
+	.social-icon {
 		width: 24px;
 		height: 24px;
 	}
 
 	#info-col {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		width: 100%;
+		padding-left: 16px;
 		display: flex;
 		flex-direction: column;
-	}
-
-	#badges {
-		display: flex;
-		flex-direction: row;
 	}
 </style>
