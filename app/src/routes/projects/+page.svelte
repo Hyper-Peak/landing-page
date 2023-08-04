@@ -3,6 +3,7 @@
 	import DevBadge from './components/DevBadge.svelte';
 	import DevInfo from './components/DevInfo.svelte';
 	import Developer from './components/Developer.svelte';
+	import Project from './components/Project.svelte';
 </script>
 
 <UnderConstruction name="Projects" />
@@ -23,6 +24,13 @@
 	</Developer>
 
 	<h2>Projects</h2>
+
+	<Project
+		name="Ivy Wallet"
+		href="https://play.google.com/store/apps/details?id=com.ivy.wallet"
+		logo="https://play-lh.googleusercontent.com/YHXVmEDX8ninFHoor_-xS4mARMxS6ql2IxjK-CVzLOu-bHdYJzdHDc5HokI97Sp4RXfA=w480-h960-rw"
+		description="Ivy Wallet is a free budget manager and spending tracker app that’ll help you manage your personal finances with ease."
+	/>
 </div>
 
 <style>
