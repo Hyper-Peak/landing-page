@@ -3,16 +3,18 @@
 	import GithubLogoDark from '$lib/assets/github-logo-dark.svg';
 	import LinkedInLogo from '$lib/assets/linkedin-logo.svg';
 	import { ds } from '$lib/design-system';
+	import DevBadge from './DevBadge.svelte';
 
 	export let names: string;
 	export let profilePic: string;
 	export let linkedInUrl: string;
 	export let githubUrl: string;
+	export let badges: string[];
 
 	$: GithubLogo = $ds.isLight ? GithubLogoLight : GithubLogoDark;
 </script>
 
-<div id="dev-card">
+<div id="dev-card" style="--max-width: 520px; --profile-pic: 112px;">
 	<div id="identity-col">
 		<img id="profile-pic" src={profilePic} alt={`${names} software developer`} />
 		<div id="social-media" class="mt8">
@@ -27,13 +29,18 @@
 	<div id="info-col">
 		<h3>{names}</h3>
 		<slot />
+		<div id="badges" class="mt8">
+			{#each badges as badge}
+				<DevBadge>{badge}</DevBadge>
+			{/each}
+		</div>
 	</div>
 </div>
 
 <style>
 	#dev-card {
 		width: 100%;
-		max-width: 320px;
+		max-width: var(--max-width);
 		border-radius: 16px;
 		border-style: solid;
 		border-width: 2px;
@@ -53,8 +60,8 @@
 	}
 
 	#profile-pic {
-		width: 112px;
-		height: 112px;
+		width: var(--profile-pic);
+		height: var(--profile-pic);
 		border-radius: 16px;
 	}
 
@@ -75,8 +82,17 @@
 		padding-top: 8px;
 		padding-bottom: 8px;
 		width: 100%;
+		max-width: calc(var(--max-width) - var(--profile-pic));
+		box-sizing: border-box;
 		padding-left: 16px;
 		display: flex;
 		flex-direction: column;
+	}
+
+	#badges {
+		display: flex;
+		flex-direction: row;
+		gap: 8px;
+		flex-wrap: wrap;
 	}
 </style>
