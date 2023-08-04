@@ -1,29 +1,36 @@
 <script lang="ts">
-	import GithubLogoLight from '$lib/assets/github-logo-light.svg';
-	import GithubLogoDark from '$lib/assets/github-logo-dark.svg';
-	import LinkedInLogo from '$lib/assets/linkedin-logo.svg';
-	import { ds } from '$lib/design-system';
+	import GithubDark from '$lib/assets/github-logo-dark.svg';
+	import GithubHovered from '$lib/assets/github-logo-hovered.svg';
+	import GithubLight from '$lib/assets/github-logo-light.svg';
+	import LinkedInHovered from '$lib/assets/linkedin-logo-hovered.svg';
+	import LinkedIn from '$lib/assets/linkedin-logo.svg';
 	import DevBadge from './DevBadge.svelte';
+	import SocialIcon from './SocialIcon.svelte';
 
 	export let names: string;
 	export let profilePic: string;
 	export let linkedInUrl: string;
 	export let githubUrl: string;
 	export let badges: string[];
-
-	$: GithubLogo = $ds.isLight ? GithubLogoLight : GithubLogoDark;
 </script>
 
 <div id="dev-card" style="--max-width: 520px; --profile-pic: 112px;">
 	<div id="identity-col">
 		<img id="profile-pic" src={profilePic} alt={`${names} software developer`} />
 		<div id="social-media" class="mt8">
-			<a href={linkedInUrl} target="_blank">
-				<img src={LinkedInLogo} alt={`${names} linkedin`} class="social-icon" />
-			</a>
-			<a href={githubUrl} target="_blank">
-				<img src={GithubLogo} alt={`${names} github`} class="social-icon" />
-			</a>
+			<SocialIcon
+				href={linkedInUrl}
+				icon={LinkedIn}
+				iconHovered={LinkedInHovered}
+				alt={`${names} linkedin`}
+			/>
+			<SocialIcon
+				href={githubUrl}
+				icon={GithubLight}
+				iconDark={GithubDark}
+				iconHovered={GithubHovered}
+				alt={`${names} github`}
+			/>
 		</div>
 	</div>
 	<div id="info-col">
@@ -71,11 +78,6 @@
 		align-items: center;
 		gap: 8px;
 		flex-direction: row;
-	}
-
-	.social-icon {
-		width: 24px;
-		height: 24px;
 	}
 
 	#info-col {
